@@ -1,0 +1,136 @@
+
+// Font Styles
+
+// heading
+@mixin heading-1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 140%;
+    
+  }
+  @mixin heading-2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    
+  }
+  @mixin heading-3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    
+  }
+  @mixin heading-4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    
+  }
+  @mixin heading-5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    
+  }
+  @mixin heading-6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    
+  }
+
+// body
+@mixin body-1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+}
+@mixin body-2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+}
+@mixin body-3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+@mixin body-4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+}
+@mixin body-5 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+}
+@mixin body-Light {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+}
+
+// caption
+@mixin caption-1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 180%;
+}
+@mixin caption-2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+}
+@mixin caption-3 {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 180%;
+}
+@mixin caption-4 {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 180%;
+}
+
+// button
+@mixin button-1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+}
+@mixin button-2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+}
+
+// overline
+@mixin overline-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+@mixin overline-2 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 180%;
+}
+
+// Undeline
+@mixin underline-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+@mixin underline-2 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 180%;
+}
+@mixin underline-Light {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 180%;
+}
+

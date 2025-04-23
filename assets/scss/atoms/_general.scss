@@ -1,0 +1,55 @@
+
+// atoms
+@use '../atoms/colores' as *;
+@use '../atoms/spacing' as *;
+@use '../atoms/radius' as *;
+@use '../atoms/fonts' as *;
+
+
+// title styles
+@mixin title-styles {
+    display: flex;
+    align-items: center;
+    gap: $space-8;
+    color: $gray10;
+    @include heading-4;
+}
+// line styles
+@mixin line-styles{
+    flex-grow: 1;
+    height: 1px;
+    background-color: $gray4;
+    margin-top: 5px;
+}
+// a styles
+@mixin a-styles{
+    display: flex;
+    @include button-2;
+    color: $tint-primary;
+}
+
+// flex mixin
+@mixin flex ($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: center;
+}
+
+//  فلکس با تنظیمات دلخواه
+//   @mixin flex($justify: center, $align: center, $direction: row, $wrap: nowrap) {
+//     display: flex;
+//     justify-content: $justify;
+//     align-items: $align;
+//     flex-direction: $direction;
+//     flex-wrap: $wrap;
+//   }
+  
+  //  سنتر کردن کامل (عمودی + افقی)
+  @mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+

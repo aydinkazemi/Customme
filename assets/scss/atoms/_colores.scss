@@ -1,0 +1,49 @@
+
+// tint
+$tint7:#B95962;
+$tint6:#CA8289;
+$tint5:#DCACB1;
+$tint4:#E5C1C4;
+$tint3:#EDD5D8;
+$tint2:#F6EAEB;
+$tint1:#FFFFFF;
+
+$tint-primary:#A72F3B;
+
+// shade
+$shade7:#86262F;
+$shade6:#641C23;
+$shade5:#431318;
+$shade4:#320E12;
+$shade3:#21090C;
+$shade2:#110506;
+$shade1:#000000;
+
+$primary:$tint-primary;
+
+// Neutral
+$gray10:#242424;
+$gray9:#3f3637;
+$gray8:#656565;
+$gray7:#898989;
+$gray6:#AFAFAF;
+$gray5:#CBCBCB;
+$gray4:#D6D6D6;
+$gray3:#EDEDED;
+$gray2:#F0F0F0;
+$gray1:#F8F8F8;
+
+// State
+$error:#C30000;
+$elight:#ED2E2E; 
+$warning:#A9791C;
+$Wlight:#F4B740;
+$success:#00966D;
+$slight:#00BA88;
+$ebg:#FFF2F2;
+$wbg:#FFF8E1;
+$sbg:#F3FDFA;
+
+
+// gradient
+$main-gradient:linear-gradient(to bottom,  rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.8) 63%,rgb(0, 0, 0, 0.99) 100%);

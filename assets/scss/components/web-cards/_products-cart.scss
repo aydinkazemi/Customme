@@ -1,0 +1,292 @@
+// atoms
+@use '../../atoms/colores' as *;
+@use '../../atoms/spacing' as *;
+@use '../../atoms/radius' as *;
+@use '../../atoms/fonts' as *;
+@use '../../atoms/general' as *;
+
+// products scss code
+.products{
+    &_title{
+        @include title-styles;
+
+        &_line{
+            @include line-styles;
+        }
+        &_a{
+            @include a-styles;
+        }
+    }
+    &_main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-40;
+        justify-content: space-between;
+        margin: $space-24 0 $space-40 0;
+        &_card{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $gray5;
+            border-radius: $radius-16;
+            padding: $space-16;
+            gap: $space-16;
+            max-width: 300px;
+            // margin: $space-24 0 $space-8 0;
+
+            &_img{
+                position: relative;
+
+                &_colors{
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    top: 235px;
+                    right: 182px;
+                    &_white{
+                        display: inline-block; 
+                        border: 1px solid $gray9;
+                        width: 20px; 
+                        height: 20px; 
+                        border-radius: 50%;
+                        position: relative;
+                        background-color: $tint1; 
+                        left: 10px;
+                    }
+                    &_red{
+                        display: inline-block; 
+                        border: 1px solid $gray9;
+                        width: 20px; 
+                        height: 20px; 
+                        border-radius: 50%;
+                        position: relative;
+                        background-color: $tint-primary; 
+                        left: 15px;
+                    }
+                    &_yellow{
+                        display: inline-block; 
+                        border: 1px solid $gray9;
+                        width: 20px; 
+                        height: 20px; 
+                        border-radius: 50%;
+                        position: relative;
+                        background-color: $Wlight; 
+                        left: 20px;
+                    }
+                    &_blue{
+                        display: inline-block; 
+                        border: 1px solid $gray9;
+                        width: 20px; 
+                        height: 20px; 
+                        border-radius: 50%;
+                        position: relative;
+                        background-color: $slight; 
+                        left: 25px;
+                    }
+                    &_orange{
+                        display: inline-block; 
+                        border: 1px solid $gray9;
+                        width: 20px; 
+                        height: 20px; 
+                        border-radius: 50%;
+                        position: relative;
+                        background-color: $elight; 
+                        left: 30px;
+                    }
+                }
+            }
+            &_info{
+                display: flex;
+                flex-direction: column;
+                gap: $space-12;
+                color: $gray9;
+                &_description{
+                    display: flex;
+                    flex-direction: column;
+                    gap: $space-12;
+
+                    &_name{
+                        display: flex;
+                        justify-content: space-between;
+                        @include heading-6;
+                    }
+                    &_p{
+                        @include body-4;
+                        min-height: 50px;
+                    }
+                    &_price{
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: $space-8;
+                        @include heading-5;
+                    }
+                }
+
+            }
+        
+        }
+    }
+}
+
+// Popular designs scss code
+.PopularDesigns{
+    &_title{
+        @include title-styles;
+
+        &_line{
+            @include line-styles;
+        }
+        &_a{
+            @include a-styles;
+        }
+    }
+    &_main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-40;
+        justify-content: space-between;
+        margin: $space-24 0 $space-40 0;
+
+        &_card{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $gray5;
+            border-radius: $radius-16;
+            padding: $space-16;
+            gap: $space-16;
+            max-width: 300px;
+
+            &_info{
+                display: flex;
+                flex-direction: column;
+                gap: $space-12;
+                color: $gray9;
+
+                &_description{
+                    display: flex;
+                    flex-direction: column;
+                    gap: $space-12;
+
+                    &_name{
+                        display: flex;
+                        justify-content: space-between;
+                        @include heading-6;
+                    }
+                    &_p{
+                        @include body-4;
+                        min-height: 50px;
+                    }
+                }
+                // &_button{
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     gap: $space-4;
+                //     @include button-2;
+                //     background-color: $tint1;
+                //     border: 1px solid $tint-primary;
+                //     color: $tint-primary;
+                //     padding: $space-8 $space-24;
+                //     border-radius: $radius-8;
+                // }
+
+            }
+        
+        }
+    }
+}
+
+// Weeks Designs scss code
+.WeeksDesigns{
+    &_title{
+        @include title-styles;
+
+        &_line{
+            @include line-styles;
+        }
+        &_a{
+            @include a-styles;
+        }
+    }
+    &_main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-40;
+        justify-content: space-between;
+        margin: $space-24 0 $space-40 0;
+
+        &_side{
+            display: flex;
+            flex-direction: column;
+            padding: $space-16;
+            gap: $space-32;
+            max-width: 300px;
+            align-items: flex-end;
+
+            &_title{
+                display: flex;
+                @include heading-4;
+                color: $gray9;
+                align-items: flex-end;
+                padding: 43px 30px 20px 5px;
+            }
+        }
+        &_card{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $gray5;
+            border-radius: $radius-16;
+            padding: $space-16;
+            gap: $space-16;
+            max-width: 300px;
+            img{
+                border-radius: $radius-8;
+            }
+
+            &_info{
+                display: flex;
+                flex-direction: column;
+                gap: $space-12;
+                color: $gray9;
+                &_description{
+                    display: flex;
+                    flex-direction: column;
+                    gap: $space-12;
+
+                    &_name{
+                        display: flex;
+                        justify-content: space-between;
+                        @include heading-6;
+                    }
+                    &_p{
+                        @include body-4;
+                        min-height: 50px;
+                    }
+                    &_price{
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: $space-8;
+                        @include heading-5;
+                    }
+                }
+
+            }
+        
+        }
+    }
+}
+
+// Interests scss code
+.Interests{
+    &_title{
+        @include title-styles;
+
+        &_line{
+            @include line-styles;
+        }
+    }
+}
+
+
+
+
+

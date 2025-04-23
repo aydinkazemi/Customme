@@ -1,0 +1,61 @@
+
+// atoms
+@use '../../atoms/fonts' as *;
+@use '../../atoms/colores' as *;
+@use '../../atoms/radius' as *;
+@use '../../atoms/spacing' as *;
+
+.header{
+    border-bottom: 1px $gray4 solid;
+    &_top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $py-8 0;
+        color: $tint1;
+        background-color: $tint-primary;
+        @include body-2;
+    }
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $space-76;
+        margin: $my-24 0;
+        &_search{
+            padding: $space-8 $space-24;
+            border-radius: $radius-16;
+            &_box{
+                min-width: 600px;
+                min-height: 50px;
+                border-radius: $radius-16;
+                padding: $space-8 $space-24;
+                position: relative;
+                color: $tint-primary;
+            }
+            &_img{
+                position: absolute;
+                top: 100px;
+                left: 660px;
+                cursor: pointer;
+                color: $tint-primary;
+            }
+        }
+        &_logincart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: $space-16;
+
+            &_login{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: $space-8;
+            }
+            
+        }
+    }    
+}
+
+

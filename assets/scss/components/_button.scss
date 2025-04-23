@@ -1,0 +1,52 @@
+// atoms
+@use '../atoms/general' as *;
+@use '../atoms/colores' as *;
+@use '../atoms/spacing' as *;
+@use '../atoms/radius' as *;
+@use '../atoms/fonts' as *;
+
+
+.btn{
+    @include flex(row,center,center);
+    border: unset;
+    direction: ltr;
+    gap: $space-4;
+    padding: $space-8 $space-24;
+    border-radius: $radius-8;
+    min-width: 169px;
+    min-height: 48px;
+    &:hover{
+        background-color: $tint2;
+        color: $gray10;
+    }
+    &--primary{
+        background-color: $primary;
+        color: $tint1;
+    } 
+    &--green{
+        // background-color: $primary;
+        // color: $tint1;
+        // &:hover{
+        //     background-color: $tint2;
+        // }
+    }   
+
+    &--large{
+        // padding: ;
+    }
+
+    &--outline{
+        border: 1px solid $tint-primary;
+        color: $tint-primary;
+        &:hover{
+            background-color: $tint2;
+        }
+    }
+    &--link{
+
+        // color: ;
+        // &:hover{
+        //     background-color: $tint2;
+        // }
+    }
+}

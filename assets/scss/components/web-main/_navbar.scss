@@ -1,0 +1,27 @@
+
+// atoms
+@use '../../atoms/fonts' as *;
+@use '../../atoms/colores' as *;
+@use '../../atoms/radius' as *;
+@use '../../atoms/spacing' as *;
+
+
+
+.navbar{
+    &_list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        &_unordedlist{
+            display: flex;
+            gap: $space-76;
+            color: $gray9;
+            @include body-3;
+
+        }
+    }
+}
+
+
