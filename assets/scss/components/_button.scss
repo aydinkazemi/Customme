@@ -8,6 +8,7 @@
 
 .btn{
     @include flex(row,center,center);
+    justify-content: center;
     border: unset;
     direction: ltr;
     gap: $space-4;
