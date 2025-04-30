@@ -7,144 +7,290 @@
 
 
 // top designers codes
-.TopDesigners{
-    &_title{
-        @include title-styles;
+// .TopDesigners{
+//     &_title{
+//         @include title-styles;
 
-        &_line{
-            @include line-styles;
-        }
-    }
-    &_main{
-        display: flex;
-        flex-wrap: wrap;
-        gap: $space-40;
-        justify-content: space-between;
-        margin: $space-24 0 $space-40 0;
+//         &_line{
+//             @include line-styles;
+//         }
+//     }
+//     &_main{
+//         display: flex;
+//         flex-wrap: wrap;
+//         gap: $space-40;
+//         justify-content: space-between;
+//         margin: $space-24 0 $space-40 0;
 
-        &_card{
-            display: flex;
-            flex-direction: column;
-            border: 1px solid $gray5;
-            border-radius: $radius-16;
-            gap: $space-16;
-            max-width: 300px;
-            position: relative;
-            overflow: hidden;
+//         &_card{
+//             display: flex;
+//             flex-direction: column;
+//             border: 1px solid $gray5;
+//             border-radius: $radius-16;
+//             gap: $space-16;
+//             max-width: 300px;
+//             position: relative;
+//             overflow: hidden;
 
-            &_ProfilePic{
-                display: flex;
-                justify-content: center;
-                position: relative;
+//             &_ProfilePic{
+//                 display: flex;
+//                 justify-content: center;
+//                 position: relative;
 
-                &_frame{
-                    display: flex;
-                    gap: $space-8;
-                    background-color: $tint2;
-                    width: 100%;
-                    height: 72px;
-                    overflow: hidden;
-                }
-                img{
-                    position: absolute;
-                    top: $space-32;
-                }
-            }
-            &_name{
-                display: flex;
-                gap: $space-8;
-                padding: 38px 8px 8px 8px;
-                color: $gray10;
-                @include body-3;
-                justify-content: center;
-            }
-            &_info{
-                display: flex;
-                gap: $space-8;
-                padding: 0 $space-12;
-                color: $gray7;
+//                 &_frame{
+//                     display: flex;
+//                     gap: $space-8;
+//                     background-color: $tint2;
+//                     width: 100%;
+//                     height: 72px;
+//                     overflow: hidden;
+//                 }
+//                 img{
+//                     position: absolute;
+//                     top: $space-32;
+//                 }
+//             }
+//             &_name{
+//                 display: flex;
+//                 gap: $space-8;
+//                 padding: 38px 8px 8px 8px;
+//                 color: $gray10;
+//                 @include body-3;
+//                 justify-content: center;
+//             }
+//             &_info{
+//                 display: flex;
+//                 gap: $space-8;
+//                 padding: 0 $space-12;
+//                 color: $gray7;
 
-                &_text:not(:last-child){
-                    border-left: 1px solid $gray7;
-                }
-                &_text{
-                    display: flex;
-                    @include caption-3;
-                    gap: $space-8;
-                    padding: 0 $space-8;
-                }
-            }
-            &_photos{
-                display: flex;
-                gap: $space-12;
-                padding: 0 $space-12;
-                align-items: center;
-            }
-            &_button{
-                margin: 0 $space-12 $space-16 $space-12;
-            }
-        }
-    }
-    &_banners{
-        display: flex;
-        gap: $space-24;
-        &_fathers{
-            display: flex;
-            background-color: $tint3;
-            border-radius: $radius-16;
-            overflow: hidden;
-            gap: $space-44;
+//                 &_text:not(:last-child){
+//                     border-left: 1px solid $gray7;
+//                 }
+//                 &_text{
+//                     display: flex;
+//                     @include caption-3;
+//                     gap: $space-8;
+//                     padding: 0 $space-8;
+//                 }
+//             }
+//             &_photos{
+//                 display: flex;
+//                 gap: $space-12;
+//                 padding: 0 $space-12;
+//                 align-items: center;
+//             }
+//             &_button{
+//                 margin: 0 $space-12 $space-16 $space-12;
+//             }
+//         }
+//     }
+//     &_banners{
+//         display: flex;
+//         gap: $space-24;
+//         &_fathers{
+//             display: flex;
+//             background-color: $tint3;
+//             border-radius: $radius-16;
+//             overflow: hidden;
+//             gap: $space-44;
 
-            &_title{
-                display: flex;
-                gap: $space-24;
-                flex-direction: column;
-                align-items: flex-start;
-                margin: $space-24;
+//             &_title{
+//                 display: flex;
+//                 gap: $space-24;
+//                 flex-direction: column;
+//                 align-items: flex-start;
+//                 margin: $space-24;
 
-                &_h{
-                    @include heading-4;
-                    color: $gray10;
+//                 &_h{
+//                     @include heading-4;
+//                     color: $gray10;
 
-                }
-                &_btn{
-                    min-width: 139px;
-                }
-            }
-        }
-        &_mothers{
-            display: flex;
-            background-color: $tint3;
-            border-radius: $radius-16;
-            overflow: hidden;
-            gap: $space-44;
+//                 }
+//                 &_btn{
+//                     min-width: 139px;
+//                 }
+//             }
+//         }
+//         &_mothers{
+//             display: flex;
+//             background-color: $tint3;
+//             border-radius: $radius-16;
+//             overflow: hidden;
+//             gap: $space-44;
 
-            &_title{
-                display: flex;
-                gap: $space-24;
-                flex-direction: column;
-                align-items: flex-start;
-                margin: $space-24;
+//             &_title{
+//                 display: flex;
+//                 gap: $space-24;
+//                 flex-direction: column;
+//                 align-items: flex-start;
+//                 margin: $space-24;
 
-                &_h{
-                    @include heading-4;
-                    color: $gray10;
+//                 &_h{
+//                     @include heading-4;
+//                     color: $gray10;
 
-                }
-                &_btn{
-                    display: flex;
-                    gap: $space-4;
-                    padding: $space-8 $space-24;
-                    border-radius: $radius-8;
-                    background-color: $tint3;
-                    color: $tint-primary;
-                    border: 1px solid $tint-primary;
-                    @include button-2;
-                }
-            }
-        }
-    }
-}
+//                 }
+//                 &_btn{
+//                     display: flex;
+//                     gap: $space-4;
+//                     padding: $space-8 $space-24;
+//                     border-radius: $radius-8;
+//                     background-color: $tint3;
+//                     color: $tint-primary;
+//                     border: 1px solid $tint-primary;
+//                     @include button-2;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .top-designers {
+//     &__title {
+//         @include title-styles;
+
+//         &-line {
+//             @include line-styles;
+//         }
+//     }
+//     &__main {
+//         display: flex;
+//         flex-wrap: wrap;
+//         gap: $space-40;
+//         justify-content: space-between;
+//         margin: $space-24 0 $space-40 0;
+
+//         &-card {
+//             display: flex;
+//             flex-direction: column;
+//             border: 1px solid $gray5;
+//             border-radius: $radius-16;
+//             gap: $space-16;
+//             max-width: 300px;
+//             position: relative;
+//             overflow: hidden;
+
+//             &-profile-pic {
+//                 display: flex;
+//                 justify-content: center;
+//                 position: relative;
+
+//                 &-frame {
+//                     display: flex;
+//                     gap: $space-8;
+//                     background-color: $tint2;
+//                     width: 100%;
+//                     height: 72px;
+//                     overflow: hidden;
+//                 }
+//                 img {
+//                     position: absolute;
+//                     top: $space-32;
+//                 }
+//             }
+
+//             &-name {
+//                 display: flex;
+//                 gap: $space-8;
+//                 padding: 38px 8px 8px 8px;
+//                 color: $gray10;
+//                 @include body-3;
+//                 justify-content: center;
+//             }
+
+//             &-info {
+//                 display: flex;
+//                 gap: $space-8;
+//                 padding: 0 $space-12;
+//                 color: $gray7;
+
+//                 &-text:not(:last-child) {
+//                     border-left: 1px solid $gray7;
+//                 }
+//                 &-text {
+//                     display: flex;
+//                     @include caption-3;
+//                     gap: $space-8;
+//                     padding: 0 $space-8;
+//                 }
+//             }
+
+//             &-photos {
+//                 display: flex;
+//                 gap: $space-12;
+//                 padding: 0 $space-12;
+//                 align-items: center;
+//             }
+
+//             &-button {
+//                 margin: 0 $space-12 $space-16 $space-12;
+//             }
+//         }
+//     }
+
+//     &__banners {
+//         display: flex;
+//         gap: $space-24;
+
+//         &-fathers {
+//             display: flex;
+//             background-color: $tint3;
+//             border-radius: $radius-16;
+//             overflow: hidden;
+//             gap: $space-44;
+
+//             &-title {
+//                 display: flex;
+//                 gap: $space-24;
+//                 flex-direction: column;
+//                 align-items: flex-start;
+//                 margin: $space-24;
+
+//                 &-h {
+//                     @include heading-4;
+//                     color: $gray10;
+//                 }
+
+//                 &-btn {
+//                     min-width: 139px;
+//                 }
+//             }
+//         }
+
+//         &-mothers {
+//             display: flex;
+//             background-color: $tint3;
+//             border-radius: $radius-16;
+//             overflow: hidden;
+//             gap: $space-44;
+
+//             &-title {
+//                 display: flex;
+//                 gap: $space-24;
+//                 flex-direction: column;
+//                 align-items: flex-start;
+//                 margin: $space-24;
+
+//                 &-h {
+//                     @include heading-4;
+//                     color: $gray10;
+//                 }
+
+//                 &-btn {
+//                     display: flex;
+//                     gap: $space-4;
+//                     padding: $space-8 $space-24;
+//                     border-radius: $radius-8;
+//                     background-color: $tint3;
+//                     color: $tint-primary;
+//                     border: 1px solid $tint-primary;
+//                     @include button-2;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
 
