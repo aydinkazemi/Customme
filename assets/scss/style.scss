@@ -1,9 +1,13 @@
 
 // bootstrapt
-@use '../../node_modules/bootstrap/scss/bootstrap.scss';
+@use 'bootstrap/scss/bootstrap';
 
 // icons
-@use '../../node_modules/fontawesome-free/scss/fontawesome.scss';
+@use '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+// swiper
+@use '../../node_modules/swiper/swiper-bundle' as *;
+
 
 // Atoms
 @use 'atoms/colores' as *;

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3",
     "compile": "^0.0.2",
     "compile-sass": "^2.0.0",
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "scss": "sass --watch assets/scss/style.scss dist/style.css",
+    "scss": "sass --watch --load-path=node_modules assets/scss/style.scss dist/style.css",
     "watch": "npm-run-all --parallel scss js"
   },
   "devDependencies": {
