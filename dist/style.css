@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Bootstrap  v5.3.5 (https://getbootstrap.com/)
+ * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -4454,24 +4454,24 @@ textarea.form-control-lg {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top,
-  .card-group > .card:not(:last-child) .card-header {
+  .card-group > .card:not(:last-child) > .card-img-top,
+  .card-group > .card:not(:last-child) > .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom,
-  .card-group > .card:not(:last-child) .card-footer {
+  .card-group > .card:not(:last-child) > .card-img-bottom,
+  .card-group > .card:not(:last-child) > .card-footer {
     border-bottom-right-radius: 0;
   }
   .card-group > .card:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top,
-  .card-group > .card:not(:first-child) .card-header {
+  .card-group > .card:not(:first-child) > .card-img-top,
+  .card-group > .card:not(:first-child) > .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom,
-  .card-group > .card:not(:first-child) .card-footer {
+  .card-group > .card:not(:first-child) > .card-img-bottom,
+  .card-group > .card:not(:first-child) > .card-footer {
     border-bottom-left-radius: 0;
   }
 }
@@ -7052,6 +7052,10 @@ textarea.form-control-lg {
 .visually-hidden:not(caption),
 .visually-hidden-focusable:not(:focus):not(:focus-within):not(caption) {
   position: absolute !important;
+}
+.visually-hidden *,
+.visually-hidden-focusable:not(:focus):not(:focus-within) * {
+  overflow: hidden !important;
 }
 
 .stretched-link::after {
@@ -21026,8 +21030,8 @@ button.swiper-pagination-bullet {
 }
 .header_content_search_img {
   position: absolute;
-  top: 100px;
-  left: 660px;
+  top: 95px;
+  left: 635px;
   cursor: pointer;
   color: #A72F3B;
 }
@@ -21811,6 +21815,9 @@ button.swiper-pagination-bullet {
   line-height: 140%;
 }
 
+.interests {
+  position: relative;
+}
 .interests__title {
   display: flex;
   align-items: center;
@@ -21838,9 +21845,15 @@ button.swiper-pagination-bullet {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 40px;
   margin: 24px 0 40px 0;
+}
+.interests__btnPrev img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
 }
 
 .interest-card {
@@ -21854,6 +21867,9 @@ button.swiper-pagination-bullet {
 }
 .interest-card__img {
   position: relative;
+}
+.interest-card__img img {
+  border-radius: 8px;
 }
 .interest-card__colors {
   display: flex;
@@ -21931,11 +21947,6 @@ button.swiper-pagination-bullet {
 .swiper-slide {
   width: auto;
   height: auto;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #000; /* رنگ دکمه‌های قبلی و بعدی */
 }
 
 body section, header {

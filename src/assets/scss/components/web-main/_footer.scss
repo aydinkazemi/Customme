@@ -1,0 +1,16 @@
+// atoms
+@use '../../atoms/fonts' as *;
+@use '../../atoms/colores' as *;
+@use '../../atoms/radius' as *;
+@use '../../atoms/spacing' as *;
+@use '../../atoms/general' as *;
+
+.footer{
+    &__main{
+        &-title{
+            &-input{
+                
+            }
+        }
+    }
+}
