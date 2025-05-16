@@ -21048,6 +21048,117 @@ button.swiper-pagination-bullet {
   gap: 8px;
 }
 
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 56px 0;
+}
+.footer__up {
+  background-color: #641C23;
+  color: #FFFFFF;
+}
+.footer__right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.footer__description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer__input {
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #641C23;
+  color: #AFAFAF;
+  border: 1px #FFFFFF solid;
+}
+.footer__btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #A72F3B;
+  color: #FFFFFF;
+  margin-right: 12px;
+  border: 1px #641C23 solid;
+}
+.footer__left {
+  margin-left: 80px;
+}
+.footer__social-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+.footer__icons {
+  display: flex;
+  gap: 24px;
+}
+.footer__bottom {
+  background-color: #A72F3B;
+  color: #FFFFFF;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+}
+.footer__companion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__paraghraph-title {
+  display: flex;
+  border-bottom: 1px #FFFFFF solid;
+  padding-bottom: 10px;
+  margin-bottom: 32px;
+}
+.footer__unlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__unlist li a {
+  color: #FFFFFF;
+}
+.footer__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.footer__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 48px;
+}
+.footer__contact {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 72px;
+}
+.footer__license {
+  display: flex;
+  gap: 32px;
+}
+.footer__copyright {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 180%;
+  padding-bottom: 24px;
+}
+
 .btn {
   display: flex;
   justify-content: row;
@@ -21091,10 +21202,6 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
-}
-
-.body_c {
-  margin-bottom: 500px;
 }
 
 .hero_content {
