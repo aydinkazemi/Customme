@@ -13,74 +13,60 @@
     
     <!-- header codes -->
     <header class="header">
-        <div class="header_top">
-        <p>با عضویت در کاستومی، اولین سفارش خود را ” رایگان” تحویل بگیرید </p>
+        <div class="header__top">
+            <p>با عضویت در کاستومی، اولین سفارش خود را ” رایگان” تحویل بگیرید</p>
         </div>
         <div class="container">
-           <div class="header_content">
-                <div class="header_content_logo">
+            <div class="header__content">
+                <div class="header__logo">
                     <img src="../src/assets/media/image/header/header-logo.svg" alt="logo image">
                 </div>
-                <div class="header_content_search">
-                    <input type="search" class="header_content_search_box" placeholder="جستجو">
-                    <div class="header_content_search_img">
-                         <img src="../src/assets/media/icons/header/search-normal.svg" alt="">
+                <div class="header__search">
+                    <input type="search" class="header__search-input" placeholder="جستجو">
+                    <div class="header__search-icon">
+                        <img src="../src/assets/media/icons/header/search-normal.svg" alt="">
                     </div>
                 </div>
-                <div class="header_content_logincart">
-                    <div class="header_content_logincart_login">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                        <div class="header_content_logincart_login_register">
-                            <a href="#" class="login_btn">ورود |</a>
-                            <a href="#" class="register_btn">ثبت نام</a>
+                <div class="header__actions">
+                    <div class="header__login">
+                        <img src="../src/assets/media/icons/header/Login.svg" class="header__login-icon" alt="login">
+                        <div class="header__auth-links">
+                            <a href="#" class="header__login-btn">ورود |</a>
+                            <a href="#" class="header__register-btn">ثبت نام</a>
                         </div>
                     </div>
-                    <div class="header_content_logincart_shopping">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="#" class="login_btn">سبد خرید</a>
+                    <div class="header__cart">
+                        <img src="../src/assets/media/icons/header/shopping-cart.svg" class="header__cart-icon" alt="shopping-cart">
+                        <a href="#" class="header__cart-link">سبد خرید</a>
                     </div>
                 </div>
-           </div> 
+            </div>
         </div>
     </header>
-
+    
     <!-- navbar codes -->
     <section class="navbar">
         <div class="container">
-            <div class="navbar_list">
-                <div class="navbar_list_btn">
-                    <button class="btn btn--primary">
-                        <p>!خودت طراحیش کن </p>   
-                         <img src="../src/assets/media/icons/navbar/magicpen.svg" alt="">
-                    </button>
-                </div>
-                <ul class="navbar_list_unordedlist">
-                    <li>
-                        <a href="#">بوشاک</a>
-                    </li>
-                    <li>
-                        <a href="#">لوازم خانه</a>
-                    </li>
-                    <li>
-                        <a href="#">قاب موبایل</a>
-                    </li>
-                    <li>
-                        <a href="#">اکسسوری</a>
-                    </li>
-                    <li>
-                        <a href="#">مدرسه و اداره</a>
-                    </li>
-                    <li>
-                        <a href="#">کارت و بوستر</a>
-                    </li>
-                    <li>
-                        <a href="#">جشن و مهمانی</a>
-                    </li>
-                </ul>
+          <div class="navbar__list">
+            <div class="navbar__button">
+              <button class="btn btn--primary">
+                <p>!خودت طراحیش کن</p>
+                <img src="../src/assets/media/icons/navbar/magicpen.svg" alt="">
+              </button>
             </div>
+            <ul class="navbar__menu">
+              <li><a href="#">بوشاک</a></li>
+              <li><a href="#">لوازم خانه</a></li>
+              <li><a href="#">قاب موبایل</a></li>
+              <li><a href="#">اکسسوری</a></li>
+              <li><a href="#">مدرسه و اداره</a></li>
+              <li><a href="#">کارت و بوستر</a></li>
+              <li><a href="#">جشن و مهمانی</a></li>
+            </ul>
+          </div>
         </div>
     </section>
-
+      
     <!-- hero codes -->
     <section class="hero">
         <div class="container">
@@ -1223,7 +1209,7 @@
                 <div class="footer__main">
                     <div class="footer__right">
                         <div class="footer__form-side">
-                            <label class="footer__description">برای دریافت آخرین اخبار و تخفیف های جدید،ایمیل خود را وارد نمایید</p>
+                            <label class="footer__description">برای دریافت آخرین اخبار و تخفیف های جدید،ایمیل خود را وارد نمایید</label>
                             <input type="email" name="email" class="footer__input" id="footer-email" placeholder="ایمیل شما">
                         </div>
                         <button type="submit" class="footer__btn">ثبت</button>
@@ -1247,8 +1233,8 @@
                 <div class="footer__main">
                     <div class="footer__menu">
                         <div class="footer__companion">
-                            <p class="footer__paraghraph-title">همراه با کاستومی</p>
-                            <ul class="footer__unlist">
+                            <p class="footer__paragraph-title">همراه با کاستومی</p>
+                            <ul class="footer__list">
                                 <li><a href="#">فروش محصولات</a></li>
                                 <li><a href="#">فرصت همکاری</a></li>
                                 <li><a href="#">تماس با ما</a></li>
@@ -1256,8 +1242,8 @@
                             </ul>
                         </div>
                         <div class="footer__services">
-                            <p class="footer__paraghraph-title">خدمات مشتریان</p>
-                            <ul class="footer__unlist">
+                            <p class="footer__paragraph-title">خدمات مشتریان</p>
+                            <ul class="footer__list">
                                 <li><a href="#">سوالات متداول</a></li>
                                 <li><a href="#">حریم خصوصی</a></li>
                                 <li><a href="#">ثبت شکایت</a></li>
@@ -1265,8 +1251,8 @@
                             </ul>
                         </div>
                         <div class="footer__help">
-                            <p class="footer__paraghraph-title">راهنمای خرید</p>
-                            <ul class="footer__unlist">
+                            <p class="footer__paragraph-title">راهنمای خرید</p>
+                            <ul class="footer__list">
                                 <li><a href="#">راهنمای ثبت سفارش</a></li>
                                 <li><a href="#">شیوه های پرداخت</a></li>
                                 <li><a href="#">نحوه ارسال سفارش ها</a></li>
@@ -1281,7 +1267,7 @@
                             <p>۰۲۱-۳۴۵۶۰۰۰</p>
                             <p>پاسخگویی ۲۴ ساعته ، ۷ روز هفته </p>
                         </div>
-                        <div class="footer__license">
+                        <div class="footer__license-item">
                             <img src="../src/assets/media/image/footer/01.png" alt="img">
                             <img src="../src/assets/media/image/footer/02.png" alt="img">
                             <img src="../src/assets/media/image/footer/03 1.png" salt="img">
@@ -1293,6 +1279,7 @@
         </div>
     </footer>
       
+    
       
 
 

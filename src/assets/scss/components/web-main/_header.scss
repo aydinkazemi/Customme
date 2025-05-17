@@ -5,57 +5,85 @@
 @use '../../atoms/radius' as *;
 @use '../../atoms/spacing' as *;
 
-.header{
-    border-bottom: 1px $gray4 solid;
-    &_top{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: $py-8 0;
-        color: $tint1;
-        background-color: $tint-primary;
-        @include body-2;
+.header {
+    border-bottom: 1px solid $gray4;
+  
+    &__top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $py-8 0;
+      color: $tint1;
+      background-color: $tint-primary;
+      @include body-2;
     }
-    &_content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: $space-76;
-        margin: $my-24 0;
-        &_search{
-            padding: $space-8 $space-24;
-            border-radius: $radius-16;
-            &_box{
-                min-width: 600px;
-                min-height: 50px;
-                border-radius: $radius-16;
-                padding: $space-8 $space-24;
-                position: relative;
-                color: $tint-primary;
-            }
-            &_img{
-                position: absolute;
-                top: 95px;
-                left: 635px;  
-                cursor: pointer;
-                color: $tint-primary;
-            }
-        }
-        &_logincart{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: $space-16;
-
-            &_login{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: $space-8;
-            }
-            
-        }
-    }    
+  
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: $space-76;
+      margin: $my-24 0;
+    }
+  
+    &__logo {
+    }
+  
+    &__search {
+      position: relative;
+      padding: $space-8 $space-24;
+      border-radius: $radius-16;
+  
+      &-input {
+        min-width: 600px;
+        min-height: 50px;
+        border-radius: $radius-16;
+        padding: $space-8 $space-24;
+        color: $tint-primary;
+      }
+  
+      &-icon {
+        position: absolute;
+        top: 22.3px;
+        left: 46.5px;
+        cursor: pointer;
+        color: $tint-primary;
+      }
+    }
+  
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: $space-16;
+    }
+  
+    &__login {
+      display: flex;
+      align-items: center;
+      gap: $space-8;
+  
+      &-icon {
+      }
+  
+      &-btn {
+      }
+    }
+  
+    &__register-btn {
+    }
+  
+    &__cart {
+      display: flex;
+      align-items: center;
+      gap: $space-8;
+  
+      &-icon {
+      }
+  
+      &-link {
+      }
+    }
 }
+
 
 

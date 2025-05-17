@@ -20996,9 +20996,9 @@ button.swiper-pagination-bullet {
 }
 
 .header {
-  border-bottom: 1px #D6D6D6 solid;
+  border-bottom: 1px solid #D6D6D6;
 }
-.header_top {
+.header__top {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21009,45 +21009,47 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   line-height: 180%;
 }
-.header_content {
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 76px;
   margin: 24px 0;
 }
-.header_content_search {
+.header__search {
+  position: relative;
   padding: 8px 24px;
   border-radius: 16px;
 }
-.header_content_search_box {
+.header__search-input {
   min-width: 600px;
   min-height: 50px;
   border-radius: 16px;
   padding: 8px 24px;
-  position: relative;
   color: #A72F3B;
 }
-.header_content_search_img {
+.header__search-icon {
   position: absolute;
-  top: 95px;
-  left: 635px;
+  top: 22.3px;
+  left: 46.5px;
   cursor: pointer;
   color: #A72F3B;
 }
-.header_content_logincart {
+.header__actions {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 16px;
 }
-.header_content_logincart_login {
+.header__login {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 8px;
 }
-
+.header__cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .footer__main {
   display: flex;
   justify-content: space-between;
@@ -21078,6 +21080,8 @@ button.swiper-pagination-bullet {
   background-color: #641C23;
   color: #AFAFAF;
   border: 1px #FFFFFF solid;
+  margin-top: 8px;
+  min-width: 405px;
 }
 .footer__btn {
   padding: 12px 24px;
@@ -21116,18 +21120,28 @@ button.swiper-pagination-bullet {
   flex-direction: column;
   gap: 8px;
 }
-.footer__paraghraph-title {
+.footer__services {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__help {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__paragraph-title {
   display: flex;
   border-bottom: 1px #FFFFFF solid;
   padding-bottom: 10px;
   margin-bottom: 32px;
 }
-.footer__unlist {
+.footer__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.footer__unlist li a {
+.footer__list li a {
   color: #FFFFFF;
 }
 .footer__head {
@@ -21148,7 +21162,7 @@ button.swiper-pagination-bullet {
   gap: 8px;
   margin-bottom: 72px;
 }
-.footer__license {
+.footer__license-item {
   display: flex;
   gap: 32px;
 }
@@ -21189,19 +21203,27 @@ button.swiper-pagination-bullet {
 .btn--outline:hover {
   background-color: #F6EAEB;
 }
-.navbar_list {
+.navbar__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-.navbar_list_unordedlist {
+.navbar__menu {
   display: flex;
   gap: 76px;
   color: #3f3637;
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
+}
+.navbar__menu li a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+.navbar__menu li a:hover {
+  color: #A72F3B;
 }
 
 .hero_content {
