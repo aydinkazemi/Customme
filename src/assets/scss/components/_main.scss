@@ -5,8 +5,6 @@
 @use '../atoms/fonts' as *;
 @use '../atoms/general' as *;
 
-// @use 'swiper/swiper-bundle.css' as *;
-// @use 'swiper/swiper-bundle' as *;
 @use '../../../../node_modules/swiper/swiper-bundle.css' as *;
 
 
@@ -17,247 +15,294 @@
     // margin-bottom: 500px;
 }
 
+// navbar scss
+.navbar {
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    &__button {
+    }
+  
+    &__menu {
+      display: flex;
+      gap: $space-76;
+      color: $gray9;
+      @include body-3;
+  
+      li a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.3s;
+  
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
 // hero scss
-.hero_content{
-    display: flex;
-    background-color: $tint3;
-    border-radius: $radius-16;
-    position: relative;
-    overflow: hidden;
-
-    &_text{
-        display: flex;
-        flex-direction: column;
-        margin: $space-76 $space-76 0 0;
-        
-        &_title{
-            @include heading-3;
-            color: $gray9;
-
-        }
-        &_paraghraph{
-            @include body-2;
-            color: $gray9;
-            margin: $space-16 0 $space-56;
-        }
-        &_button{
-            display: flex;
-            gap: $space-12;
-            &_red{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // @include button-2;
-                // gap: $space-8;
-                // padding: $space-8 $space-24;
-                // background-color: $tint-primary;
-                // color: $tint1;
-                // border-radius: $radius-8;
-            }
-            &_white{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // @include button-2;
-                // padding: $space-8 $space-40;
-                // background-color: $tint3;
-                // color: $tint-primary;
-                // border-radius: $radius-8;
-                // border-color: $tint-primary;
-            }
-        }
+.hero {
+    &__content {
+      display: flex;
+      background-color: $tint3;
+      border-radius: $radius-16;
+      position: relative;
+      overflow: hidden;
     }
-    &_image{
-
-        &_base{
-            margin: $space-76 112px;
-        }
-        &_left{
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        &_right{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
+  
+    &__text {
+      display: flex;
+      flex-direction: column;
+      margin: 110px 74px 0 0;
     }
-}
+  
+    &__title {
+      @include heading-3;
+      color: $gray9;
+    }
+  
+    &__paragraph {
+      @include body-2;
+      color: $gray9;
+      margin: $space-16 0 $space-56;
+    }
+  
+    &__buttons {
+      display: flex;
+      gap: $space-12;
+    }
+  
+    &__images {
+      position: relative;
+    }
+  
+    &__image--base {
+      margin: $space-76 112px;
+    }
+  
+    &__image--left {
+      position: absolute;
+      top: 0;
+      right: -442px;
+    }
 
+    &__image--right {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+} 
+  
 //   categories scss
-.categories{
-
-    &_title{
-        @include title-styles;
-
-        &_line{
-            @include line-styles;
-        }
+.categories {
+    &__title {
+      @include title-styles;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $space-16;
+      position: relative;
+  
+      &-line {
+        @include line-styles;
+      }
     }
-
-    &_content{
-        display: flex;
-        justify-content: space-between;
-        gap: $space-24;
-        margin: $space-24 0 $space-40 0;
-        
-
-        &_box{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            @include caption-1;
-            color: $gray10;
-            gap: $space-8;
-            border-radius: $radius-16;
-            padding: $space-8;
-            border: 1px solid $gray4;
-            cursor: pointer;
-        }
+  
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: $space-24;
+      margin: $space-24 0 $space-40 0;
+    }
+  
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      @include caption-1;
+      color: $gray10;
+      gap: $space-8;
+      border-radius: $radius-16;
+      padding: $space-8;
+      border: 1px solid $gray4;
+      cursor: pointer;
+      background-color: $tint1;
+      transition: all 0.3s ease;
+  
+      img {
+        object-fit: contain;
+      }
+  
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      }
     }
 }
-
+  
 // .SpecialSale scss
-.SpecialSale{
-    
-    &_title{
-        @include title-styles;
-
-        &_line{
-            @include line-styles;
-        }
+.special-sale {
+    &__container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
     }
-    &_content{
+  
+    &__title {
+      @include title-styles;
+  
+      img {
+        margin-left: 1rem;
+      }
+  
+      &-line {
+        @include line-styles;
+      }
+    }
+  
+    &__content {
+      display: flex;
+      margin-top: $space-24;
+    }
+  
+    &__main {
+      display: flex;
+      position: relative;
+      width: 100%;
+      max-height: 633px;
+  
+      &-label {
+        position: absolute;
+        z-index: 2;
+        bottom: 38.5px;
+        right: 44.2px;
+        right: $space-32;
+        @include heading-3;
+        color: $tint3;
+      }
+  
+      &-img {
         display: flex;
-        margin-top: $space-24;
-
-        &_col{
-            display: flex;
-            position: relative;
+        position: relative;
+        border-radius: $space-16;
+        overflow: hidden;
+  
+        &-inner {
+          position: relative;
+  
+          &::after {
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $main-gradient;
+            z-index: 2;
+          }
+  
+          img {
             width: 100%;
-            max-height: 633px;
-            
-            &_p{
-                position: absolute;
-                z-index: 2;
-                bottom: 73px;
-                right: $space-32;
-                @include heading-3;
-                color: $tint3;
-            }
-            &_img{
-                display: flex;
-                position: relative;
-                border-radius: $space-16;
-                overflow: hidden;
-                &_i::after{
-                    content: '';
-                    position: absolute;
-                    top: 60%;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: $main-gradient;
-                    z-index: 2;
-                }
-
-                &_i{
-                    position: relative;
-                      
-                }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    display: block;
-                }
-                
-            }   
-            
-            &_rectangle{
-                position: absolute;
-                display: flex;
-                right: 527px;
-
-                P{
-                    display: flex;
-                    position: absolute;
-                    color: $tint1;
-                    @include body-1;
-                    top: 40%;
-                    left: 50%;
-                    transform: translate(-50%, -50%); 
-                }
-            }
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
         }
-        &_ColsFour{
-            display: flex;
-            position: relative;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap:34px;
-
-            &_col{
-                align-items: center;
-                position: relative;
-                
-
-                &_p{
-                    z-index: 2;
-                    @include heading-3;
-                    color: $tint3;
-                    position: relative;
-                    top: -69px;
-                    left: -20px;
-                    
-                }
-                &_img{
-                    display: flex;
-                    position: relative;
-                    border-radius: $space-16;
-                    overflow: clip;
-                    &_i{
-                        object-fit: cover;
-                        width: 100%;
-                        height: 100%;
-                        
-                    }
-                    &_i::after{
-                        content: '';
-                        position: absolute;
-                        top: 60%;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background: $main-gradient;
-                        z-index: 2;
-                    }
-                    
-                }   
-                
-                &_rectangleM{
-                    position: absolute;
-                    display: flex;
-                    top: 0;
-                    left: 20px;
-                    
-                    P{
-                        display: flex;
-                        position: absolute;
-                        color: $tint1;
-                        @include body-1;
-                        top: 40%;
-                        left: 50%;
-                        transform: translate(-50%, -50%); 
-                    }
-                }
-            }
+      }
+  
+      &-discount {
+        position: absolute;
+        display: flex;
+        right: 527px;
+  
+        p {
+          display: flex;
+          position: absolute;
+          color: $tint1;
+          @include body-1;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
+      }
     }
-      
-      
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 34px;
+    }
+  
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      &-label {
+        z-index: 2;
+        @include heading-3;
+        color: $tint3;
+        position: relative;
+        top: -69px;
+        left: 45.5px;
+      }
+  
+      &-img {
+        display: flex;
+        position: relative;
+        border-radius: $space-16;
+        overflow: clip;
+  
+        &-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+  
+          &::after {
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $main-gradient;
+            z-index: 2;
+          }
+  
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+  
+      &-discount {
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 20px;
+  
+        p {
+          display: flex;
+          position: absolute;
+          color: $tint1;
+          @include body-1;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
 }
 
 // banners scss
@@ -326,41 +371,52 @@
 }
 
 // InvitationCard scss
-.InvitationCard {
-    &_main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap:$space-24;
-        padding: $space-24 0;
-
-
-        &_content{
-            &_column{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap:24px;
-            }
-        }
-        &_title{
-            display: flex;
-            @include heading-4;
-            color: $gray10;
-            gap: $space-24;
-            align-items: center;
-            justify-content: center;
-        }
-        button{
-            display: flex;
-        }
-        &_btn{
-            align-self: center; 
-        }
+.invitation-card {
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: $space-24;
+      padding: $space-24 0;
     }
-}
+  
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: $space-24;
+    }
+  
+    &__title {
+      display: flex;
+      @include heading-4;
+      color: $gray10;
+      gap: $space-24;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__btn {
+      align-self: center;
+      display: flex;
+      align-items: center;
+      gap: $space-8;
 
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  
+  
 
   
   

@@ -1,17 +1,11 @@
 // bootstrapt
-// @use 'bootstrap/scss/bootstrap';
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
-// @use 'bootstrap/scss/bootstrap';
-
-
 
 // icons
 @use '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
-
 // swiper
 @use '../../../node_modules/swiper/swiper-bundle' as *;
-// @import "~swiper/swiper-bundle";
 
 
 // Atoms
@@ -28,8 +22,6 @@
 @use './components/button' as *;
 @use './components/web-main/navbar';
 @use './components/main';
-@use './components/web-cards/products-cart';
-@use './components/web-cards/designers-card';
 @use './components/web-cards/cards' as *;
 
 
