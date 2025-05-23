@@ -26,29 +26,30 @@
       margin: $my-24 0;
     }
   
-    &__logo {
+    &__logo-mobile {
+      display: none;
     }
   
     &__search {
       position: relative;
       padding: $space-8 $space-24;
       border-radius: $radius-16;
+    }
   
-      &-input {
-        min-width: 600px;
-        min-height: 50px;
-        border-radius: $radius-16;
-        padding: $space-8 $space-24;
-        color: $tint-primary;
-      }
+    &__search-input {
+      min-width: 600px;
+      min-height: 50px;
+      border-radius: $radius-16;
+      padding: $space-8 $space-24;
+      color: $tint-primary;
+    }
   
-      &-icon {
-        position: absolute;
-        top: 22.3px;
-        left: 46.5px;
-        cursor: pointer;
-        color: $tint-primary;
-      }
+    &__search-icon {
+      position: absolute;
+      top: 22.3px;
+      left: 46.5px;
+      cursor: pointer;
+      color: $tint-primary;
     }
   
     &__actions {
@@ -83,6 +84,90 @@
       &-link {
       }
     }
+    &__toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+  
+      .header__bar {
+        width: 100%;
+        height: 3px;
+        background: #000;
+        border-radius: 2px;
+      }
+    }
+  
+    &__nav {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: white;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 250px;
+      z-index: 1000;
+
+      &--open {
+        max-height: 300px; // یا height: auto با animation هم میشه
+      }
+
+    }
+  
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 1rem;
+  
+      li {
+        margin: 0.5rem 0;
+  
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+}
+
+
+@media (width < 768px){
+  .header{
+    &__hamburger{
+      display: block;
+    }
+    &__top{
+      display: none;
+    }
+    &__content{
+      justify-content: center;
+      gap: $space-16;
+      flex-direction: row-reverse;
+    }
+    &__logo-desktop{
+      display: none;
+    }
+    &__logo-mobile{
+      display: block;
+    }
+    &__actions{
+      display: none;
+    }
+    &__search-input{
+      min-width: auto;
+      min-height: auto;
+      border-radius: 40px;
+    }
+    &__search-icon{
+      top: 18.3px;
+    }
+  }
 }
 
 

@@ -5,19 +5,43 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    main: './src/assets/js/main.js', // نام‌گذاری دستی برای entry
+    main: './src/assets/js/main.js',
   },
   output: {
-    filename: '[name].js', // خروجی می‌شود main.js
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true, // پاک‌سازی پوشه dist قبل از هر بیلد
+    clean: true,
   },
+  resolve: {
+    modules: ['node_modules', 'src'],
+  },  
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          sources: {
+            list: [
+              // تگ‌هایی که باید بررسی کنه
+              {
+                tag: 'img',
+                attribute: 'src',
+                type: 'src',
+              },
+              {
+                tag: 'image',
+                attribute: 'xlink:href',
+                type: 'src',
+              }
+            ],
+          },
+        },
+      },     
+      {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // استفاده از این پلاگین برای استخراج CSS
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
         ],
@@ -25,7 +49,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader, // استفاده از این پلاگین برای استخراج CSS
+          MiniCssExtractPlugin.loader,
           'css-loader'
         ],
       },
@@ -35,12 +59,21 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.(png|jpe?g|gif|svg|woff2?|eot|ttf)$/,
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/[hash][ext][query]', // تصاویر و فونت‌ها بروند توی پوشه assets
+          filename: 'assets/images/[name]-[hash][ext]',
         },
       },
+      {
+        test: /\.(woff2?|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name]-[hash][ext]',
+        },
+      },
+      
+      
     ],
   },
   plugins: [
@@ -60,7 +93,7 @@ module.exports = {
       chunks: ['main'],
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css', // اینجا تنظیم می‌کنیم که نام فایل CSS چطور باشه
+      filename: '[name].css',
     }),
   ],
   devtool: 'source-map',

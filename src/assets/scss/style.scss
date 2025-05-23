@@ -1,11 +1,14 @@
 // bootstrapt
-@use '../node_modules/bootstrap/scss/bootstrap.scss';
+@use 'bootstrap/scss/bootstrap';
+
 
 // icons
 @use '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+// @use '@fortawesome/fontawesome-free/scss/fontawesome' as *;
 
 // swiper
 @use '../../../node_modules/swiper/swiper-bundle' as *;
+// @use 'swiper/swiper-bundle' as *;
 
 
 // Atoms
@@ -16,13 +19,14 @@
 @use 'atoms/general' as *;
 
 // Components
-@use './components/web-main/header';
-@use './components/web-main/input';
-@use './components/web-main/footer';
+@use './components/web-main/header'as *;
+@use './components/web-main/input'as *;
+@use './components/web-main/footer'as *;
 @use './components/button' as *;
-@use './components/web-main/navbar';
-@use './components/main';
+@use './components/web-main/navbar'as *;
+@use './components/main'as *;
 @use './components/web-cards/cards' as *;
+
 
 
 // scss codessssssssssssssssssssssssssssss

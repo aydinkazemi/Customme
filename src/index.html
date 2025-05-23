@@ -17,26 +17,43 @@
             <p>با عضویت در کاستومی، اولین سفارش خود را ” رایگان” تحویل بگیرید</p>
         </div>
         <div class="container">
+            <button class="header__toggle" id="menu-toggle">
+                <span class="header__bar"></span>
+                <span class="header__bar"></span>
+                <span class="header__bar"></span>
+            </button>
+            <nav class="header__nav" id="menu">
+                <ul class="header__list">
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">خدمات</a></li>
+                <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </nav>
             <div class="header__content">
-                <div class="header__logo">
-                    <img src="../src/assets/media/image/header/header-logo.svg" alt="logo image">
+                <div class="header__logo-desktop">
+                    <img src="./assets/media/image/header/header-logo.svg" alt="logo image">
+                    <!-- <img src="./assets/media/image/header/header-logo.svg" alt="hed"> -->
+                </div>
+                <div class="header__logo-mobile">
+                    <img src="./assets/media/image/header/LOGO-Mobile.svg" alt="logo image">
                 </div>
                 <div class="header__search">
                     <input type="search" class="header__search-input" placeholder="جستجو">
                     <div class="header__search-icon">
-                        <img src="../src/assets/media/icons/header/search-normal.svg" alt="">
+                        <img src="./assets/media/icons/header/search-normal.svg" alt="">
                     </div>
                 </div>
                 <div class="header__actions">
                     <div class="header__login">
-                        <img src="../src/assets/media/icons/header/Login.svg" class="header__login-icon" alt="login">
+                        <img src="./assets/media/icons/header/Login.svg" class="header__login-icon" alt="login">
                         <div class="header__auth-links">
                             <a href="#" class="header__login-btn">ورود |</a>
                             <a href="#" class="header__register-btn">ثبت نام</a>
                         </div>
                     </div>
                     <div class="header__cart">
-                        <img src="../src/assets/media/icons/header/shopping-cart.svg" class="header__cart-icon" alt="shopping-cart">
+                        <img src="./assets/media/icons/header/shopping-cart.svg" class="header__cart-icon" alt="shopping-cart">
                         <a href="#" class="header__cart-link">سبد خرید</a>
                     </div>
                 </div>
@@ -51,7 +68,7 @@
             <div class="navbar__button">
               <button class="btn btn--primary">
                 <p>!خودت طراحیش کن</p>
-                <img src="../src/assets/media/icons/navbar/magicpen.svg" alt="">
+                <img src="./assets/media/icons/navbar/magicpen.svg" alt="">
               </button>
             </div>
             <ul class="navbar__menu">
@@ -82,17 +99,17 @@
               </div>
               <div class="hero__buttons">
                 <button class="btn btn--primary">
-                  <img src="../src/assets/media/icons/hero/arrow-left.svg" alt="">
+                  <img src="./assets/media/icons/hero/arrow-left.svg" alt="">
                   <p>شروع طراحی</p>
-                  <img src="../src/assets/media/icons/hero/brush.svg" alt="icons">
+                  <img src="./assets/media/icons/hero/brush.svg" alt="icons">
                 </button>
                 <button class="btn btn--outline">دیدن محصولات</button>
               </div>
             </div>
             <div class="hero__images">
-              <img src="../src/assets/media/image/hero/hero-img.png" class="hero__image--base" alt="hero img">
-              <img src="../src/assets/media/image/hero/hero-img-1.png" class="hero__image--right" alt="">
-              <img src="../src/assets/media/image/hero/hero-img-2.png" class="hero__image--left" alt="">
+              <img src="./assets/media/image/hero/hero-img.png" class="hero__image--base" alt="hero img">
+              <img src="./assets/media/image/hero/hero-img-1.png" class="hero__image--right" alt="">
+              <img src="./assets/media/image/hero/hero-img-2.png" class="hero__image--left" alt="">
             </div>
           </div>
         </div>
@@ -102,34 +119,34 @@
     <section class="categories">
         <div class="container">
           <div class="categories__title">
-            <img src="../src/assets/media/icons/produts/medal-star.svg" alt="">
+            <img src="./assets/media/icons/produts/medal-star.svg" alt="">
             دسته بندی محصولات
             <span class="categories__title-line"></span>
           </div>
       
           <div class="categories__content">
             <div class="categories__box">
-              <img src="../src/assets/media/image/categories/cover.png" alt="قاب موبایل">
+              <img src="./assets/media/image/categories/cover.png" alt="قاب موبایل">
               <p>قاب موبایل</p>
             </div>
             <div class="categories__box">
-              <img src="../src/assets/media/image/categories/happy-cart.png" alt="کارت تبریک">
+              <img src="./assets/media/image/categories/happy-cart.png" alt="کارت تبریک">
               <p>کارت تبریک</p>
             </div>
             <div class="categories__box">
-              <img src="../src/assets/media/image/categories/acsesory.png" alt="اکسسوری">
+              <img src="./assets/media/image/categories/acsesory.png" alt="اکسسوری">
               <p>اکسسوری</p>
             </div>
             <div class="categories__box">
-              <img src="../src/assets/media/image/categories/tahrir.png" alt="لوازم تحریر">
+              <img src="./assets/media/image/categories/tahrir.png" alt="لوازم تحریر">
               <p>لوازم تحریر</p>
             </div>
             <div class="categories__box">
-              <img src="../src/assets/media/image/categories/lebas.png" alt="لباس">
+              <img src="./assets/media/image/categories/lebas.png" alt="لباس">
               <p>لباس</p>
             </div>
             <div class="categories__box">
-              <img src="../src/assets/media/image/categories/decor.png" alt="دکور خانه">
+              <img src="./assets/media/image/categories/decor.png" alt="دکور خانه">
               <p>دکور خانه</p>
             </div>
           </div>
@@ -140,7 +157,7 @@
     <section class="products">
         <div class="container">
           <div class="products__title">
-            <img src="../src/assets/media/icons/produts/medal-star.svg" alt="">
+            <img src="./assets/media/icons/produts/medal-star.svg" alt="">
             پر فروش ترین ها
             <span class="products__title-line"></span>
             <a href="#" class="products__title-link">مشاهده بیشتر</a>
@@ -148,7 +165,7 @@
           <div class="products__main">
               <div class="product-card">
                 <div class="product-card__img">
-                    <img src="../../src/assets/media/image/products/women-tishert.png" alt="img">
+                    <img src="./assets/media/image/products/women-tishert.png" alt="img">
                     <div class="product-card__colors">
                         <span class="product-card__color product-card__color--white"></span>
                         <span class="product-card__color product-card__color--red"></span>
@@ -161,7 +178,7 @@
                     <div class="product-card__description">
                         <div class="product-card__name">
                             تیشرت زنانه
-                            <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                            <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                         </div>
                         <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                     </div>
@@ -173,7 +190,7 @@
               </div>
               <div class="product-card">
                 <div class="product-card__img">
-                  <img src="../../src/assets/media/image/products/male-tishert.png" alt="img">
+                  <img src="./assets/media/image/products/male-tishert.png" alt="img">
                   <div class="product-card__colors">
                     <span class="product-card__color product-card__color--white"></span>
                     <span class="product-card__color product-card__color--red"></span>
@@ -186,7 +203,7 @@
                   <div class="product-card__description">
                     <div class="product-card__name">
                         تیشرت مردانه
-                        <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                        <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                     </div>
                     <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                   </div>
@@ -198,7 +215,7 @@
               </div>
               <div class="product-card">
                 <div class="product-card__img">
-                  <img src="../../src/assets/media/image/products/mobile-cover.png" alt="img">
+                  <img src="./assets/media/image/products/mobile-cover.png" alt="img">
                   <div class="product-card__colors">
                     <span class="product-card__color product-card__color--white"></span>
                     <span class="product-card__color product-card__color--red"></span>
@@ -211,7 +228,7 @@
                   <div class="product-card__description">
                     <div class="product-card__name">
                         قاب موبایل آیفون
-                        <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                        <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                     </div>
                     <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                   </div>
@@ -223,7 +240,7 @@
               </div>
               <div class="product-card">
                 <div class="product-card__img">
-                  <img src="../../src/assets/media/image/products/hat-male.png" alt="img">
+                  <img src="./assets/media/image/products/hat-male.png" alt="img">
                   <div class="product-card__colors">
                     <span class="product-card__color product-card__color--white"></span>
                     <span class="product-card__color product-card__color--red"></span>
@@ -236,7 +253,7 @@
                   <div class="product-card__description">
                     <div class="product-card__name">
                         کلاه مردانه
-                        <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                        <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                     </div>
                     <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                   </div>
@@ -248,7 +265,7 @@
               </div>
               <div class="product-card">
                 <div class="product-card__img">
-                  <img src="../../src/assets/media/image/products/tarh-mag.png" alt="img">
+                  <img src="./assets/media/image/products/tarh-mag.png" alt="img">
                   <div class="product-card__colors">
                     <span class="product-card__color product-card__color--white"></span>
                     <span class="product-card__color product-card__color--red"></span>
@@ -261,7 +278,7 @@
                   <div class="product-card__description">
                     <div class="product-card__name">
                         ماگ قابل طراحی
-                        <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                        <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                     </div>
                     <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                   </div>
@@ -273,7 +290,7 @@
               </div>
               <div class="product-card">
                 <div class="product-card__img">
-                  <img src="../../src/assets/media/image/products/g-box.png" alt="img">
+                  <img src="./assets/media/image/products/g-box.png" alt="img">
                   <div class="product-card__colors">
                     <span class="product-card__color product-card__color--white"></span>
                     <span class="product-card__color product-card__color--red"></span>
@@ -286,7 +303,7 @@
                   <div class="product-card__description">
                     <div class="product-card__name">
                         باکس غذا
-                        <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                        <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                     </div>
                     <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                   </div>
@@ -298,7 +315,7 @@
               </div>
               <div class="product-card">
                 <div class="product-card__img">
-                  <img src="../../src/assets/media/image/products/seramik-mag.png" alt="img">
+                  <img src="./assets/media/image/products/seramik-mag.png" alt="img">
                   <div class="product-card__colors">
                     <span class="product-card__color product-card__color--white"></span>
                     <span class="product-card__color product-card__color--red"></span>
@@ -311,7 +328,7 @@
                   <div class="product-card__description">
                     <div class="product-card__name">
                         ماگ سرامیکی
-                        <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                        <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                     </div>
                     <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                   </div>
@@ -323,7 +340,7 @@
               </div>
               <div class="product-card">
                 <div class="product-card__img">
-                  <img src="../../src/assets/media/image/products/ Spiral-Notebook.png" alt="img">
+                  <img src="./assets/media/image/products/ Spiral-Notebook.png" alt="img">
                   <div class="product-card__colors">
                     <span class="product-card__color product-card__color--white"></span>
                     <span class="product-card__color product-card__color--red"></span>
@@ -336,7 +353,7 @@
                   <div class="product-card__description">
                     <div class="product-card__name">
                         دفتر سرامیکی
-                        <img src="../src/assets/media/icons/favorite.svg" alt="icon heart">
+                        <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                     </div>
                     <p class="product-card__text">دارای رنگ بندی، قابل طراحی</p>
                   </div>
@@ -354,7 +371,7 @@
     <section class="special-sale">
         <div class="container">
           <div class="special-sale__title">
-            <img src="../src/assets/media/icons/specialSeal/discount-shape.svg" alt="">
+            <img src="./assets/media/icons/specialSeal/discount-shape.svg" alt="">
             فروش ویژه
             <span class="special-sale__title-line"></span>
           </div>
@@ -362,12 +379,12 @@
             <div class="special-sale__main">
               <div class="special-sale__main-img">
                 <div class="special-sale__main-img-inner">
-                  <img src="../src/assets/media/image/off/lavazem-khane.png" alt="">
+                  <img src="./assets/media/image/off/lavazem-khane.png" alt="">
                 </div>
               </div>
               <p class="special-sale__main-label">لوازم خانه</p>
               <div class="special-sale__main-discount">
-                <img src="../src/assets/media/image/off/Rectangle 174.png" alt="">
+                <img src="./assets/media/image/off/Rectangle 174.png" alt="">
                 <p>20% OFF</p>
               </div>
             </div>
@@ -376,12 +393,12 @@
               <div class="special-sale__item">
                 <div class="special-sale__item-img">
                   <div class="special-sale__item-img-inner">
-                    <img src="../src/assets/media/image/off/pooshak.png" alt="">
+                    <img src="./assets/media/image/off/pooshak.png" alt="">
                   </div>
                 </div>
                 <p class="special-sale__item-label">پوشاک</p>
                 <div class="special-sale__item-discount">
-                  <img src="../src/assets/media/image/off/Rectangle 174.png" alt="">
+                  <img src="./assets/media/image/off/Rectangle 174.png" alt="">
                   <p>20% OFF</p>
                 </div>
               </div>
@@ -389,12 +406,12 @@
               <div class="special-sale__item">
                 <div class="special-sale__item-img">
                   <div class="special-sale__item-img-inner">
-                    <img src="../src/assets/media/image/off/edareh.png" alt="">
+                    <img src="./assets/media/image/off/edareh.png" alt="">
                   </div>
                 </div>
                 <p class="special-sale__item-label">مدرسه و اداره</p>
                 <div class="special-sale__item-discount">
-                  <img src="../src/assets/media/image/off/Rectangle 174.png" alt="">
+                  <img src="./assets/media/image/off/Rectangle 174.png" alt="">
                   <p>20% OFF</p>
                 </div>
               </div>
@@ -402,12 +419,12 @@
               <div class="special-sale__item">
                 <div class="special-sale__item-img">
                   <div class="special-sale__item-img-inner">
-                    <img src="../src/assets/media/image/off/digital.png" alt="">
+                    <img src="./assets/media/image/off/digital.png" alt="">
                   </div>
                 </div>
                 <p class="special-sale__item-label">دیجیتال</p>
                 <div class="special-sale__item-discount">
-                  <img src="../src/assets/media/image/off/Rectangle 174.png" alt="">
+                  <img src="./assets/media/image/off/Rectangle 174.png" alt="">
                   <p>20% OFF</p>
                 </div>
               </div>
@@ -415,12 +432,12 @@
               <div class="special-sale__item">
                 <div class="special-sale__item-img">
                   <div class="special-sale__item-img-inner">
-                    <img src="../src/assets/media/image/off/estiker.png" alt="">
+                    <img src="./assets/media/image/off/estiker.png" alt="">
                   </div>
                 </div>
                 <p class="special-sale__item-label">استیکر</p>
                 <div class="special-sale__item-discount">
-                  <img src="../src/assets/media/image/off/Rectangle 174.png" alt="">
+                  <img src="./assets/media/image/off/Rectangle 174.png" alt="">
                   <p>20% OFF</p>
                 </div>
               </div>
@@ -433,7 +450,7 @@
     <section class="popular-designs">
         <div class="container">
             <div class="popular-designs__title">
-            <img src="../../src/assets/media/icons/popular/like-shapes.svg" alt="">
+            <img src="./assets/media/icons/popular/like-shapes.svg" alt="">
             طرح های پرطرفدار
             <span class="popular-designs__title-line"></span>
             <a href="#" class="popular-designs__title-link">مشاهده بیشتر</a>
@@ -441,145 +458,145 @@
             <div class="popular-designs__main">
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/estiker-one.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/estiker-one.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         استیکر
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/estiker-two.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/estiker-two.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         استیکر
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/estiker-three.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/estiker-three.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         استیکر
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/cover-back.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/cover-back.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         بک گراند قاب موبایل 
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/estiker-four.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/estiker-four.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         استیکر
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/aftabgardan.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/aftabgardan.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         تصویر آفتابگردان
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/estiker-five.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/estiker-five.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         استیکر
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
             <div class="popular-designs__card">
                 <div class="popular-designs__card-img">
-                    <img src="../../src/assets/media/image/popular/k-estiker.png" alt="استیکر">
+                    <img src="./assets/media/image/popular/k-estiker.png" alt="استیکر">
                 </div>
                 <div class="popular-designs__card-info">
                     <div class="popular-designs__card-description">
                     <div class="popular-designs__card-name">
                         استیکر حروف
-                        <img src="../../src/assets/media/icons/favorite.svg" alt="آیکن قلب">
+                        <img src="./assets/media/icons/favorite.svg" alt="آیکن قلب">
                     </div>
                     <p class="popular-designs__card-text">قابل طراحی و چاپ بر روی انواع محصولات</p>
                     </div>
                     <button class="btn btn--outline">
                     <p>افزودن به گالری</p>
-                    <img src="../../src/assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
+                    <img src="./assets/media/icons/popular/gallery-add.svg" alt="آیکن گالری">
                     </button>
                 </div>
             </div>
@@ -591,7 +608,7 @@
     <section class="top-designers">
         <div class="container">
             <div class="top-designers__title">
-                <img src="../../src/assets/media/icons/top-designer/top-designer.svg" alt="icons">
+                <img src="./assets/media/icons/top-designer/top-designer.svg" alt="icons">
                 طراحان برتر
                 <span class="top-designers__title-line"></span>
             </div>
@@ -599,7 +616,7 @@
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/negar/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/negar/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         نگار زمانی
@@ -610,19 +627,19 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/negar/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/negar/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/negar/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/negar/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/negar/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/negar/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/shahram/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/shahram/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         شهرام طالبی
@@ -633,19 +650,19 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/shahram/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/shahram/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/shahram/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/shahram/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/shahram/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/shahram/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/sara/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/sara/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         سارا محمدی
@@ -656,19 +673,19 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/sara/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/sara/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/sara/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/sara/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/sara/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/sara/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/arash/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/arash/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         آرش نظری
@@ -679,19 +696,19 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/arash/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/arash/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/arash/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/arash/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/arash/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/arash/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/samaneh/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/samaneh/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         سمانه جوادی
@@ -702,19 +719,19 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/samaneh/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/samaneh/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/samaneh/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/samaneh/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/samaneh/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/samaneh/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/saeed/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/saeed/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         سعید سلیمی
@@ -725,19 +742,19 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/saeed/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/saeed/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/saeed/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/saeed/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/saeed/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/saeed/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/marjan/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/marjan/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         مرجان جعفری
@@ -748,19 +765,19 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/marjan/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/marjan/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/marjan/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/marjan/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/marjan/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/marjan/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
                 <div class="top-designers__main-card">
                     <div class="top-designers__main-card-profile-pic">
                         <div class="top-designers__main-card-profile-pic-frame"></div>
-                        <img src="../../src/assets/media/image/TopDesigners/niloofar/Profile pic.png" alt="pic">
+                        <img src="./assets/media/image/TopDesigners/niloofar/Profile pic.png" alt="pic">
                     </div>
                     <div class="top-designers__main-card-name">
                         نیلوفر کریمی
@@ -771,13 +788,13 @@
                         <div class="top-designers__main-card-info-text"> آمار فروش : ۳۷۰ </div>
                     </div>
                     <div class="top-designers__main-card-photos">
-                        <img src="../../src/assets/media/image/TopDesigners/niloofar/03.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/niloofar/02.png" alt="img">
-                        <img src="../../src/assets/media/image/TopDesigners/niloofar/01.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/niloofar/03.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/niloofar/02.png" alt="img">
+                        <img src="./assets/media/image/TopDesigners/niloofar/01.png" alt="img">
                     </div>
                     <button class="btn btn--outline top-designers__main-card-button">
                         <p>دنبال کردن</p>
-                        <img src="../../src/assets/media/icons/top-designer/profile-add.svg" alt="icons">
+                        <img src="./assets/media/icons/top-designer/profile-add.svg" alt="icons">
                     </button>
                 </div>
 
@@ -794,14 +811,14 @@
                         <h4 class="banners__main-fathers-title-h">محصولات مناسب هدیه دادن به آقایان</h4>
                         <button class="btn btn--outline banners__main-fathers-title-btn">دیدن محصولات</button>
                     </div>
-                    <img src="../../src/assets/media/image/TopDesigners/banner/dadi 1.png" alt="dad img">
+                    <img src="./assets/media/image/TopDesigners/banner/dadi 1.png" alt="dad img">
                 </div>
                 <div class="banners__main-mothers">
                     <div class="banners__main-mothers-title">
                         <h4 class="banners__main-mothers-title-h">محصولات مناسب هدیه دادن به خانم ها</h4>
                         <button class="btn btn--outline banners__main-fathers-title-btn">دیدن محصولات</button>
                     </div>
-                    <img src="../../src/assets/media/image/TopDesigners/banner/mom 1.png" alt="mom img">
+                    <img src="./assets/media/image/TopDesigners/banner/mom 1.png" alt="mom img">
                 </div>
             </div>
         </div>
@@ -811,7 +828,7 @@
     <section class="weeks-designs">
         <div class="container">
             <div class="weeks-designs__title">
-                <img src="../../src/assets/media/icons/weeks-designs/brush.svg" alt="">
+                <img src="./assets/media/icons/weeks-designs/brush.svg" alt="">
                     جدیدترین طرح های هفته
                 <span class="weeks-designs__title-line"></span>
                 <a href="#" class="weeks-designs__title-a">مشاهده بیشتر</a>
@@ -822,19 +839,19 @@
                         محصولاتی که طراحی شده رو ببینید و در صورت نیاز طرحشون رو مطابق سلیقه خودتون تغییر بدید
                     </h4>
                     <div class="weeks-designs__side-img">
-                        <img src="../../src/assets/media/image/weeks-designs/Group-2.svg" alt="img">
-                        <img src="../../src/assets/media/image/weeks-designs/Group-1.svg" alt="img">
+                        <img src="./assets/media/image/weeks-designs/Group-2.svg" alt="img">
+                        <img src="./assets/media/image/weeks-designs/Group-1.svg" alt="img">
                     </div>
                 </div>
                 <div class="weeks-designs__card">
                     <div class="weeks-designs__img">
-                        <img src="../../src/assets/media/image/weeks-designs/abajhour.png" alt="abajhour img">
+                        <img src="./assets/media/image/weeks-designs/abajhour.png" alt="abajhour img">
                     </div>
                     <div class="weeks-designs__info product">
                         <div class="product__description">
                             <div class="product__name">
                                 آباژور
-                                <img src="../../src/assets/media/icons/favorite.svg" alt="icon heart">
+                                <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                             </div>
                             <p class="product__p">دارای رنگ بندی، قابل طراحی</p>
                         </div>
@@ -846,13 +863,13 @@
                 </div>
                 <div class="weeks-designs__card">
                     <div class="weeks-designs__img">
-                        <img src="../../src/assets/media/image/weeks-designs/magh.png" alt="abajhour img">
+                        <img src="./assets/media/image/weeks-designs/magh.png" alt="abajhour img">
                     </div>
                     <div class="weeks-designs__info product">
                         <div class="product__description">
                             <div class="product__name">
                                 ماگ قابل طراحی
-                                <img src="../../src/assets/media/icons/favorite.svg" alt="icon heart">
+                                <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                             </div>
                             <p class="product__p">دارای رنگ بندی، قابل طراحی</p>
                         </div>
@@ -864,13 +881,13 @@
                 </div>
                 <div class="weeks-designs__card">
                     <div class="weeks-designs__img">
-                        <img src="../../src/assets/media/image/weeks-designs/women-k.png" alt="abajhour img">
+                        <img src="./assets/media/image/weeks-designs/women-k.png" alt="abajhour img">
                     </div>
                     <div class="weeks-designs__info product">
                         <div class="product__description">
                             <div class="product__name">
                                 کیف زنانه
-                                <img src="../../src/assets/media/icons/favorite.svg" alt="icon heart">
+                                <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                             </div>
                             <p class="product__p">دارای رنگ بندی، قابل طراحی</p>
                         </div>
@@ -882,14 +899,14 @@
                 </div>
                 <div class="weeks-designs__card">
                     <div class="weeks-designs__img">
-                        <img src="../../src/assets/media/image/weeks-designs/chamadan.png" alt="abajhour img">
+                        <img src="./assets/media/image/weeks-designs/chamadan.png" alt="abajhour img">
                     </div>
                     <div class="weeks-designs__info product">
                         <div class="product__description">
                             <div class="product__name">
                                 چمدان
 
-                                <img src="../../src/assets/media/icons/favorite.svg" alt="icon heart">
+                                <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                             </div>
                             <p class="product__p">دارای رنگ بندی، قابل طراحی</p>
                         </div>
@@ -901,13 +918,13 @@
                 </div>
                 <div class="weeks-designs__card">
                     <div class="weeks-designs__img">
-                        <img src="../../src/assets/media/image/weeks-designs/women-ti.png" alt="abajhour img">
+                        <img src="./assets/media/image/weeks-designs/women-ti.png" alt="abajhour img">
                     </div>
                     <div class="weeks-designs__info product">
                         <div class="product__description">
                             <div class="product__name">
                                 تیشرت زنانه
-                                <img src="../../src/assets/media/icons/favorite.svg" alt="icon heart">
+                                <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                             </div>
                             <p class="product__p">دارای رنگ بندی، قابل طراحی</p>
                         </div>
@@ -919,13 +936,13 @@
                 </div>
                 <div class="weeks-designs__card">
                     <div class="weeks-designs__img">
-                        <img src="../../src/assets/media/image/weeks-designs/kosann.png" alt="abajhour img">
+                        <img src="./assets/media/image/weeks-designs/kosann.png" alt="abajhour img">
                     </div>
                     <div class="weeks-designs__info product">
                         <div class="product__description">
                             <div class="product__name">
                                 کوسن
-                                <img src="../../src/assets/media/icons/favorite.svg" alt="icon heart">
+                                <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                             </div>
                             <p class="product__p">دارای رنگ بندی، قابل طراحی</p>
                         </div>
@@ -937,13 +954,13 @@
                 </div>
                 <div class="weeks-designs__card">
                     <div class="weeks-designs__img">
-                        <img src="../../src/assets/media/image/weeks-designs/sak.png" alt="abajhour img">
+                        <img src="./assets/media/image/weeks-designs/sak.png" alt="abajhour img">
                     </div>
                     <div class="weeks-designs__info product">
                         <div class="product__description">
                             <div class="product__name">
                                 ساک هدیه
-                                <img src="../../src/assets/media/icons/favorite.svg" alt="icon heart">
+                                <img src="./assets/media/icons/favorite.svg" alt="icon heart">
                             </div>
                             <p class="product__p">دارای رنگ بندی، قابل طراحی</p>
                         </div>
@@ -963,18 +980,18 @@
           <div class="invitation-card__main">
             <div class="row invitation-card__content">
               <div class="col-md-3 invitation-card__column">
-                <img src="../src/assets/media/image/InvitationCard/Frame a.png" alt="img frame">
+                <img src="./assets/media/image/InvitationCard/Frame a.png" alt="img frame">
               </div>
               <div class="col-md-3 invitation-card__column">
-                <img src="../src/assets/media/image/InvitationCard/frame cake.png" alt="img frame">
-                <img src="../src/assets/media/image/InvitationCard/Frame stand.png" alt="img frame">
+                <img src="./assets/media/image/InvitationCard/frame cake.png" alt="img frame">
+                <img src="./assets/media/image/InvitationCard/Frame stand.png" alt="img frame">
               </div>
               <div class="col-md-3 invitation-card__column">
-                <img src="../src/assets/media/image/InvitationCard/Frame flower.png" alt="img frame">
-                <img src="../src/assets/media/image/InvitationCard/Frame table.png" alt="img frame">
+                <img src="./assets/media/image/InvitationCard/Frame flower.png" alt="img frame">
+                <img src="./assets/media/image/InvitationCard/Frame table.png" alt="img frame">
               </div>
               <div class="col-md-3 invitation-card__column">
-                <img src="../src/assets/media/image/InvitationCard/Frame red table.png" alt="img frame">
+                <img src="./assets/media/image/InvitationCard/Frame red table.png" alt="img frame">
               </div>
             </div>
             <h4 class="invitation-card__title">
@@ -982,7 +999,7 @@
             </h4>
             <button class="btn btn--primary invitation-card__btn">
               <p>شروع طراحی</p>
-              <img src="../src/assets/media/icons/invitationcard/brush.svg" alt="">
+              <img src="./assets/media/icons/invitationcard/brush.svg" alt="">
             </button>
           </div>
         </div>
@@ -992,7 +1009,7 @@
     <section class="interests">
         <div class="container">
             <div class="interests__title">
-                <img src="../../src/assets/media/icons/like/like.svg" alt="">
+                <img src="./assets/media/icons/like/like.svg" alt="">
                 علاقه مندی ها
                 <span class="interests__title-line"></span>
             </div>
@@ -1000,7 +1017,7 @@
                 <div class="interests__main swiper-wrapper">
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/women-k.png" alt="img">
+                            <img src="./assets/media/image/faivorite/women-k.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1013,7 +1030,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 کیف زنانه
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1025,7 +1042,7 @@
                     </div>
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/women-j.png" alt="img">
+                            <img src="./assets/media/image/faivorite/women-j.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1038,7 +1055,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 جوراب زنانه
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1050,7 +1067,7 @@
                     </div>
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/mobile-cover.png" alt="img">
+                            <img src="./assets/media/image/faivorite/mobile-cover.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1063,7 +1080,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 قاب موبایل آیفون
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1075,7 +1092,7 @@
                     </div>
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/male-t.png" alt="img">
+                            <img src="./assets/media/image/faivorite/male-t.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1088,7 +1105,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 تیشرت مردانه
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1100,7 +1117,7 @@
                     </div>
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/magh.png" alt="img">
+                            <img src="./assets/media/image/faivorite/magh.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1113,7 +1130,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 ماگ قابل طراحی
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1125,7 +1142,7 @@
                     </div>
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/sak.png" alt="img">
+                            <img src="./assets/media/image/faivorite/sak.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1138,7 +1155,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 ساک هدیه
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1150,7 +1167,7 @@
                     </div>
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/ Spiral-Notebook.png" alt="img">
+                            <img src="./assets/media/image/faivorite/ Spiral-Notebook.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1163,7 +1180,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 دفتر سرامیکی
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1175,7 +1192,7 @@
                     </div>
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">
-                            <img src="../../src/assets/media/image/faivorite/tarh-mag.png" alt="img">
+                            <img src="./assets/media/image/faivorite/tarh-mag.png" alt="img">
                             <div class="interest-card__colors">
                             <span class="interest-card__color interest-card__color--white"></span>
                             <span class="interest-card__color interest-card__color--red"></span>
@@ -1188,7 +1205,7 @@
                             <div class="interest-card__description">
                             <div class="interest-card__name">
                                 ماگ قابل طراحی
-                                <img src="../../src/assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
+                                <img src="./assets/media/icons/Heart.svg" alt="آیکون علاقه‌مندی">
                             </div>
                             <p class="interest-card__text">دارای رنگ بندی، قابل طراحی</p>
                             </div>
@@ -1201,7 +1218,7 @@
                 </div>
                 <!-- <div class="swiper-button-next"></div> -->
                 <div class="interests__btnPrev">
-                    <img src="../src/assets/media/image/interests/Carousel.png" class="swiper-button-prev"  alt="">
+                    <img src="./assets/media/image/interests/Carousel.png" class="swiper-button-prev"  alt="">
                 </div>
             </div>
 
@@ -1224,10 +1241,10 @@
                         <div class="footer__social-side">
                             <div class="footer__description">ما را در شبکه های اجتماعی دنبال کنید</div>
                             <div class="footer__icons">
-                                <img src="../src/assets/media/icons/footer/YouTube svg.svg" alt="YouTube">
-                                <img src="../src/assets/media/icons/footer/Pinterest svg.svg" alt="Pinterest">
-                                <img src="../src/assets/media/icons/footer/facabook.svg" alt="facabook">
-                                <img src="../src/assets/media/icons/footer/Instagram svg.svg" alt="Instagram">
+                                <img src="./assets/media/icons/footer/youtube.svg" alt="YouTube">
+                                <img src="./assets/media/icons/footer/pinterest.svg" alt="Pinterest">
+                                <img src="./assets/media/icons/footer/facabook.svg" alt="facabook">
+                                <img src="./assets/media/icons/footer/instagram.svg" alt="Instagram">
                             </div>
                         </div>
                     </div>
@@ -1274,9 +1291,9 @@
                             <p>پاسخگویی ۲۴ ساعته ، ۷ روز هفته </p>
                         </div>
                         <div class="footer__license-item">
-                            <img src="../src/assets/media/image/footer/01.png" alt="img">
-                            <img src="../src/assets/media/image/footer/02.png" alt="img">
-                            <img src="../src/assets/media/image/footer/03 1.png" salt="img">
+                            <img src="./assets/media/image/footer/01.png" alt="img">
+                            <img src="./assets/media/image/footer/02.png" alt="img">
+                            <img src="./assets/media/image/footer/03 1.png" salt="img">
                         </div>
                     </div>
                 </div>

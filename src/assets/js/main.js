@@ -1,7 +1,10 @@
+import arrowLeft from '../media/icons/arrow-btn/arrow-left.svg';
 import 'swiper/css/bundle';
 import '../scss/components/_main.scss';
 import Swiper from 'swiper/bundle';
+import '../scss/style.scss';
 
+import './menu';
 
 document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.mySwiper', {
@@ -21,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log("main js LOADED");
 
 });
+
+
+
 
 
 
