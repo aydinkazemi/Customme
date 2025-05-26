@@ -4,86 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>customme</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="../dist/style.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
+    <!-- <link rel="icon" href="data:,"> -->
+    <!-- <link rel="stylesheet" href="../dist/style.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
 <body class="body_c">
-    
+
     <!-- header code -->
     <header class="header">
-        <div class="header__top">
-            <p>با عضویت در کاستومی، اولین سفارش خود را ” رایگان” تحویل بگیرید</p>
+    <div class="header__top">
+      <p>با عضویت در کاستومی، اولین سفارش خود را ” رایگان” تحویل بگیرید</p>
+    </div>
+  
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo-desktop">
+          <img src="./assets/media/image/header/header-logo.svg" alt="logo image" />
         </div>
-        <div class="container">
-            <button class="header__toggle" id="menu-toggle">
-                <span class="header__bar"></span>
-                <span class="header__bar"></span>
-                <span class="header__bar"></span>
-            </button>
-            <nav class="header__nav" id="menu">
-                <ul class="header__list">
-                <li><a href="#">خانه</a></li>
-                <li><a href="#">درباره ما</a></li>
-                <li><a href="#">خدمات</a></li>
-                <li><a href="#">تماس با ما</a></li>
-                </ul>
-            </nav>
-            <div class="header__content">
-                <div class="header__logo-desktop">
-                    <img src="./assets/media/image/header/header-logo.svg" alt="logo image">
-                    <!-- <img src="./assets/media/image/header/header-logo.svg" alt="hed"> -->
-                </div>
-                <div class="header__logo-mobile">
-                    <img src="./assets/media/image/header/LOGO-Mobile.svg" alt="logo image">
-                </div>
-                <div class="header__search">
-                    <input type="search" class="header__search-input" placeholder="جستجو">
-                    <div class="header__search-icon">
-                        <img src="./assets/media/icons/header/search-normal.svg" alt="">
-                    </div>
-                </div>
-                <div class="header__actions">
-                    <div class="header__login">
-                        <img src="./assets/media/icons/header/Login.svg" class="header__login-icon" alt="login">
-                        <div class="header__auth-links">
-                            <a href="#" class="header__login-btn">ورود |</a>
-                            <a href="#" class="header__register-btn">ثبت نام</a>
-                        </div>
-                    </div>
-                    <div class="header__cart">
-                        <img src="./assets/media/icons/header/shopping-cart.svg" class="header__cart-icon" alt="shopping-cart">
-                        <a href="#" class="header__cart-link">سبد خرید</a>
-                    </div>
-                </div>
-            </div>
+        <div class="header__logo-mobile">
+          <img src="./assets/media/image/header/LOGO-Mobile.svg" alt="logo image" />
         </div>
-    </header>
-    
-    <!-- navbar code -->
-    <section class="navbar">
-        <div class="container">
-          <div class="navbar__list">
-            <div class="navbar__button">
-              <button class="btn btn--primary">
-                <p>!خودت طراحیش کن</p>
-                <img src="./assets/media/icons/navbar/magicpen.svg" alt="">
-              </button>
-            </div>
-            <ul class="navbar__menu">
-              <li><a href="#">بوشاک</a></li>
-              <li><a href="#">لوازم خانه</a></li>
-              <li><a href="#">قاب موبایل</a></li>
-              <li><a href="#">اکسسوری</a></li>
-              <li><a href="#">مدرسه و اداره</a></li>
-              <li><a href="#">کارت و بوستر</a></li>
-              <li><a href="#">جشن و مهمانی</a></li>
-            </ul>
+  
+        <div class="header__search">
+          <input type="search" class="header__search-input" placeholder="جستجو" />
+          <div class="header__search-icon">
+            <img src="./assets/media/icons/header/search-normal.svg" alt="" />
           </div>
         </div>
+  
+        <div class="header__actions">
+          <div class="header__login">
+            <img src="./assets/media/icons/header/Login.svg" class="header__login-icon" alt="login" />
+            <div class="header__auth-links">
+              <a href="#" class="header__login-btn">ورود |</a>
+              <a href="#" class="header__register-btn">ثبت نام</a>
+            </div>
+          </div>
+          <div class="header__cart">
+            <img src="./assets/media/icons/header/shopping-cart.svg" class="header__cart-icon" alt="shopping-cart" />
+            <a href="#" class="header__cart-link">سبد خرید</a>
+          </div>
+        </div>
+  
+        <!-- Hamburger Toggle -->
+        <div class="header__toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    </header>
+  
+    <!-- navbar code -->
+    <section class="navbar" id="mobile-menu">
+        <div class="container">
+        <div class="navbar__list">
+            <div class="navbar__button">
+            <button class="btn btn--primary">
+                <p>!خودت طراحیش کن</p>
+                <img src="./assets/media/icons/navbar/magicpen.svg" alt="" />
+            </button>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="#">بوشاک</a></li>
+                <li><a href="#">لوازم خانه</a></li>
+                <li><a href="#">قاب موبایل</a></li>
+                <li><a href="#">اکسسوری</a></li>
+                <li><a href="#">مدرسه و اداره</a></li>
+                <li><a href="#">کارت و بوستر</a></li>
+                <li><a href="#">جشن و مهمانی</a></li>
+            </ul>
+        </div>
+        </div>
     </section>
-      
+  
+
     <!-- hero code -->
     <section class="hero">
         <div class="container">

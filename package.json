@@ -15,7 +15,6 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "scss": "sass --watch --load-path=node_modules src/assets/scss/style.scss dist/style.css",
     "watch": "npm-run-all --parallel scss js",
     "dev": "webpack serve --open --mode development",
     "build": "webpack --mode production"

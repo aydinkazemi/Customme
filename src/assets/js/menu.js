@@ -1,18 +1,14 @@
-src/js/menu.js
+// menu.js
 document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
-  
-    if (toggle && menu) {
-      toggle.addEventListener("click", () => {
-        menu.classList.toggle("header__nav--open");
-        toggle.classList.toggle("is-active"); // برای انیمیشن آیکن در صورت نیاز
-      });
-    } else {
-      console.error("Menu toggle or menu element not found");
-    }
+  const toggle = document.getElementById("menu-toggle"); 
+  const navbarList = document.querySelector(".navbar__list");
+
+  toggle.addEventListener("click", () => {
+    navbarList.classList.toggle("active");
   });
-  console.log("menu.js loaded ✅");
+});
+
+  
 
 
 

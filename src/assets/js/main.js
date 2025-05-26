@@ -1,10 +1,10 @@
-import arrowLeft from '../media/icons/arrow-btn/arrow-left.svg';
 import 'swiper/css/bundle';
 import '../scss/components/_main.scss';
 import Swiper from 'swiper/bundle';
 import '../scss/style.scss';
-
 import './menu';
+// import '../scss/components/web-main/header';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.mySwiper', {
@@ -26,6 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const toggle = document.getElementById("menu-toggle");
+//   const menu = document.getElementById("menu");
+
+//   if (toggle && menu) {
+//     toggle.addEventListener("click", () => {
+//       menu.classList.toggle("header__nav--open");
+//       toggle.classList.toggle("is-active"); 
+//     });
+//   } else {
+//     console.error("Menu toggle or menu element not found");
+//   }
+// });
+console.log("menu.js loaded ✅");
 
 
 

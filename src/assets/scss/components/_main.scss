@@ -16,34 +16,34 @@
 }
 
 // navbar scss
-.navbar {
-    &__list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
+// .navbar {
+//     &__list {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       width: 100%;
+//     }
   
-    &__button {
-    }
+//     &__button {
+//     }
   
-    &__menu {
-      display: flex;
-      gap: $space-76;
-      color: $gray9;
-      @include body-3;
+//     &__menu {
+//       display: flex;
+//       gap: $space-76;
+//       color: $gray9;
+//       @include body-3;
   
-      li a {
-        text-decoration: none;
-        color: inherit;
-        transition: 0.3s;
+//       li a {
+//         text-decoration: none;
+//         color: inherit;
+//         transition: 0.3s;
   
-        &:hover {
-          color: $primary;
-        }
-      }
-    }
-  }
+//         &:hover {
+//           color: $primary;
+//         }
+//       }
+//     }
+//   }
 
 // hero scss
 .hero {
