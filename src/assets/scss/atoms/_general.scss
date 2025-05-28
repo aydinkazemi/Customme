@@ -29,12 +29,12 @@
 }
 
 // flex mixin
-@mixin flex ($direction, $align, $justify){
-    display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: center;
-}
+// @mixin flex ($direction, $align, $justify){
+//     display: flex;
+//     flex-direction: $direction;
+//     align-items: $align;
+//     justify-content: center;
+// }
 
 //  فلکس با تنظیمات دلخواه
   @mixin flex($justify: center, $align: center, $direction: row, $wrap: nowrap) {

@@ -97,6 +97,29 @@
       left: 0;
     }
 } 
+@media (width < 768px){
+  .hero{
+    &__image--base{
+      position: absolute;
+      max-width: 368px;
+      top: -61px;
+      right: -95px;
+
+    }
+    &__images {
+      position: absolute;
+    }
+    &__text{
+      @include flex(center,center,column);
+      margin: 250px 0 0 0;
+      padding: 0px $space-24 $space-24 $space-24;
+
+    }
+    &__buttons--img{
+      display: none
+    }
+  }
+}
   
 //   categories scss
 .categories {
