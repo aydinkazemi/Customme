@@ -117,36 +117,44 @@
     <section class="categories">
         <div class="container">
           <div class="categories__title">
-            <img src="./assets/media/icons/produts/medal-star.svg" alt="">
+            <img src="./assets/media/icons/produts/medal-star.svg" class="categories__title-img" alt="">
             دسته بندی محصولات
             <span class="categories__title-line"></span>
+            <div class="categories__swiper-button">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
           </div>
       
-          <div class="categories__content">
-            <div class="categories__box">
-              <img src="./assets/media/image/categories/cover.png" alt="قاب موبایل">
-              <p>قاب موبایل</p>
+          <div class="swiper categories-swiper">
+            <div class="categories__content swiper-wrapper">
+                <div class="categories__box swiper-slide">
+                <img src="./assets/media/image/categories/cover.png" alt="قاب موبایل">
+                <p>قاب موبایل</p>
+                </div>
+                <div class="categories__box swiper-slide">
+                <img src="./assets/media/image/categories/happy-cart.png" alt="کارت تبریک">
+                <p>کارت تبریک</p>
+                </div>
+                <div class="categories__box swiper-slide">
+                <img src="./assets/media/image/categories/acsesory.png" alt="اکسسوری">
+                <p>اکسسوری</p>
+                </div>
+                <div class="categories__box swiper-slide">
+                <img src="./assets/media/image/categories/tahrir.png" alt="لوازم تحریر">
+                <p>لوازم تحریر</p>
+                </div>
+                <div class="categories__box swiper-slide">
+                <img src="./assets/media/image/categories/lebas.png" alt="لباس">
+                <p>لباس</p>
+                </div>
+                <div class="categories__box swiper-slide">
+                <img src="./assets/media/image/categories/decor.png" alt="دکور خانه">
+                <p>دکور خانه</p>
+                </div>
             </div>
-            <div class="categories__box">
-              <img src="./assets/media/image/categories/happy-cart.png" alt="کارت تبریک">
-              <p>کارت تبریک</p>
-            </div>
-            <div class="categories__box">
-              <img src="./assets/media/image/categories/acsesory.png" alt="اکسسوری">
-              <p>اکسسوری</p>
-            </div>
-            <div class="categories__box">
-              <img src="./assets/media/image/categories/tahrir.png" alt="لوازم تحریر">
-              <p>لوازم تحریر</p>
-            </div>
-            <div class="categories__box">
-              <img src="./assets/media/image/categories/lebas.png" alt="لباس">
-              <p>لباس</p>
-            </div>
-            <div class="categories__box">
-              <img src="./assets/media/image/categories/decor.png" alt="دکور خانه">
-              <p>دکور خانه</p>
-            </div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
           </div>
         </div>
     </section>
@@ -1011,7 +1019,8 @@
                 علاقه مندی ها
                 <span class="interests__title-line"></span>
             </div>
-            <div class="swiper mySwiper">
+            <!-- mySwiper -->
+            <div class="swiper interests-swiper">
                 <div class="interests__main swiper-wrapper">
                     <div class="interest-card swiper-slide">
                         <div class="interest-card__img">

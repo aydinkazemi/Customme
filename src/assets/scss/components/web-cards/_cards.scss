@@ -112,6 +112,24 @@
       @include heading-5;
     }
   }
+  @media (width < 768px) {
+    .products{
+      &__title{
+        justify-content: space-between;
+        &-line{
+          display: none;
+        }
+        img{
+          display: none;
+        }
+      }
+    }
+    .product-card{
+      gap: 0;
+      max-width: 220px
+      
+    }
+  }
   
   // popular-designs scss code
   .popular-designs {

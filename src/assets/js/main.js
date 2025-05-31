@@ -3,11 +3,9 @@ import '../scss/components/_main.scss';
 import Swiper from 'swiper/bundle';
 import '../scss/style.scss';
 import './menu';
-// import '../scss/components/web-main/header';
-
 
 document.addEventListener('DOMContentLoaded', () => {
-  new Swiper('.mySwiper', {
+  new Swiper('.interests-swiper', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
@@ -21,25 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
       480: { slidesPerView: 1 },
     },
   });
-  console.log("main js LOADED");
 
+  new Swiper('.categories-swiper', {
+    loop: false,
+    slidesPerView: 5,
+    spaceBetween: 1,
+    navigation: {
+      nextEl: '.swiper-button-prev',
+      prevEl: '.swiper-button-next',
+    },
+    breakpoints: {
+      1200: { slidesPerView: 7 },
+      768: { slidesPerView: 4 },
+      480: { slidesPerView: 4 },
+    },
+  });
 });
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const toggle = document.getElementById("menu-toggle");
-//   const menu = document.getElementById("menu");
-
-//   if (toggle && menu) {
-//     toggle.addEventListener("click", () => {
-//       menu.classList.toggle("header__nav--open");
-//       toggle.classList.toggle("is-active"); 
-//     });
-//   } else {
-//     console.error("Menu toggle or menu element not found");
-//   }
-// });
-console.log("menu.js loaded ✅");
 
 
 
