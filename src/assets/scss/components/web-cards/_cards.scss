@@ -124,10 +124,23 @@
         }
       }
     }
+    .products__main{
+      gap: 32px;
+    }
     .product-card{
       gap: 0;
-      max-width: 220px
-      
+      max-width: 190px;
+      position: relative;
+    }
+    .product-card__img {
+      img{
+        width: 100%;
+      }
+    }
+    .product-card__colors{
+      top: 133px;
+      right: 83px;
+      position: absolute;
     }
   }
   
