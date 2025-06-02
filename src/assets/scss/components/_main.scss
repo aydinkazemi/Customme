@@ -377,32 +377,55 @@
       }
     }
     &__main{
-      max-height: 300px;
+      max-height: 200px;
+      max-width: 200px;
+
       &-discount{
-        right: 124px;
+        right: 155px;
+        top: 0;
       }
       &-label{
+        @include caption-2;
         bottom: 12px;
         right: 23px;
-        @include heading-5;
       }
     }
+    &__main-discount{
+      img{
+        max-width: 32px;
+        max-height: 70px;
+      }
+      p{
+        @include overline-2;
+      }
+    } 
     &__content{
       gap: 14px;
+    }
+    &__list{
+      gap: $space-16;
+      justify-content: center;
     }
     &__item{
       max-width: 90px;
       max-height: 90px;
       gap: 0;
-      &-dicount{
-        img{
-          max-width: 35px;
-          max-height: 60px;
-        }
-        p{
-          @include overline-2;
-        }
+    }
+    &__item-discount{
+      left: 12px;
+      img{
+        max-width: 32px;
+        max-height: 70px;
       }
+      p{
+        @include overline-2;
+      }
+    } 
+    &__item-label{
+      @include caption-2;
+      top: -25px;
+      left: 10px;
+
     }
   }
 }

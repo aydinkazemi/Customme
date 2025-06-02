@@ -200,6 +200,40 @@
       }
     }
   }
+  @media (width < 768px) {
+    .popular-designs{
+        &__title{
+          justify-content: space-between;
+          &-line{
+            display: none;
+          }
+          img{
+            display: none;
+          }
+        }
+        .popular-designs__main{
+          gap: 32px;
+        }
+        .popular-designs__card{
+          gap: 0;
+          max-width: 190px;
+          position: relative;
+        }
+        .popular-designs__card-img {
+          img{
+            width: 100%;
+          }
+        }
+        .popular-designs__card-name{
+          font-size: 16px;
+        }
+        .popular-designs__card-info{
+          .btn{
+            margin: 0px -8px;
+          }
+        }
+    }
+  }
 
   // top-designers scss code
   .top-designers {
@@ -208,6 +242,9 @@
 
         &-line {
             @include line-styles;
+        }
+        &-link{
+          display: none;
         }
     }
     &__main {
@@ -345,6 +382,23 @@
                 }
             }
         }
+    }
+  }
+  @media (width < 768px) {
+    .top-designers{
+      &__title{
+        justify-content: space-between;
+        &-line{
+          display: none;
+        }
+        img{
+          display: none;
+        }
+        &-link{
+          display: block;
+          @include a-styles;
+        }
+      }
     }
   }
 
