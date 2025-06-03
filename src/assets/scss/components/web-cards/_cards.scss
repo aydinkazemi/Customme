@@ -399,6 +399,57 @@
           @include a-styles;
         }
       }
+      .top-designers__main-card-profile-pic-frame{
+        // background-image: url('../../../media/image/TopDesigners/bg-image.png');
+        // background-image: url("../../media/image/TopDesigners/bg-image.png");
+        background-color: none;
+
+      }
+      .top-designers__main-card-info-text:not(:last-child) {
+        border-left: none;
+      }
+      .top-designers__main-card-info-text{
+        @include caption-1;
+      }
+      .top-designers__main-card-info{
+        @include flex(center,center,column);
+      }
+      .top-designers__main-card-photos{
+        display: none;
+      }
+    }
+    // banners
+    .banners{
+      .banners__main{
+        flex-direction: column;
+      }
+      .banners__main-fathers{
+        img{
+          border-radius: $radius-16;
+        }
+      }
+      .banners__main-fathers-title-h{
+        color: $gray10;
+        @include body-2;
+      }
+      .banners__main-fathers-title-btn{
+        border: none;
+        padding: unset;
+      }
+
+      .banners__main-mothers{
+        img{
+          border-radius: $radius-16;
+        }
+      }
+      .banners__main-mothers-title-h{
+        color: $gray10;
+        @include body-2;
+      }
+      .banners__main-mothers-title-btn{
+        border: none;
+        padding: unset;
+      }
     }
   }
 
