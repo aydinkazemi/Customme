@@ -125,7 +125,8 @@
       }
     }
     .products__main{
-      gap: 32px;
+      gap: $space-32;
+      justify-content: center;
     }
     .product-card{
       gap: 0;
@@ -211,23 +212,24 @@
             display: none;
           }
         }
-        .popular-designs__main{
-          gap: 32px;
+        &__main{
+          justify-content: center;
+          gap: $space-32;
         }
-        .popular-designs__card{
+        &__card{
           gap: 0;
           max-width: 190px;
           position: relative;
         }
-        .popular-designs__card-img {
+        &__card-img {
           img{
             width: 100%;
           }
         }
-        .popular-designs__card-name{
+        &__card-name{
           font-size: 16px;
         }
-        .popular-designs__card-info{
+        &__card-info{
           .btn{
             margin: 0px -8px;
           }
@@ -399,8 +401,10 @@
           @include a-styles;
         }
       }
+      &__main{
+        justify-content: center;
+      }
       .top-designers__main-card-profile-pic-frame{
-        // background-image: url('../../../media/image/TopDesigners/bg-image.png');
         // background-image: url("../../media/image/TopDesigners/bg-image.png");
         background-color: none;
 
@@ -464,6 +468,9 @@
         &-a{
             @include a-styles;
         }
+    }
+    &__paragraph-mobile{
+      display: none;
     }
     &__main{
         display: flex;
@@ -529,6 +536,54 @@
               gap: $space-8;
               @include heading-5;
           }
+    }
+  }
+  @media (width < 768px) {
+    .weeks-designs{
+      &__title{
+          justify-content: space-between;
+          &-line{
+            display: none;
+          }
+          img{
+            display: none;
+          }
+      }
+      &__paragraph-desktop{
+        display: none;
+      }
+      &__paragraph-mobile{
+        display: block;
+      }
+      &__card-desktop{
+        display: none;
+      }
+      &__side{
+        max-width: unset;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+        
+        &-title{
+          padding: 0;
+          color: $gray9;
+          @include body-4;
+        }
+      }
+      &__main{
+        justify-content: center;
+      }
+      &__card{
+        max-width: 190px;
+      }
+      &__img {
+        img{
+          width: 100%;
+        }
+      }
+      .product__name{
+        font-size: 16px;
+      } 
     }
   }
   
