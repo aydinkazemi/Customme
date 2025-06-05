@@ -124,6 +124,9 @@
         }
       }
     }
+    .product-card-desktop{
+      display: none;
+    }
     .products__main{
       gap: $space-32;
       justify-content: center;
@@ -203,6 +206,7 @@
   }
   @media (width < 768px) {
     .popular-designs{
+      order: 1;
         &__title{
           justify-content: space-between;
           &-line{
@@ -211,6 +215,9 @@
           img{
             display: none;
           }
+        }
+        &__card-desktop{
+          display: none;
         }
         &__main{
           justify-content: center;
@@ -403,6 +410,9 @@
       }
       &__main{
         justify-content: center;
+        &-card-desktop{
+          display: none;
+        }
       }
       .top-designers__main-card-profile-pic-frame{
         // background-image: url("../../media/image/TopDesigners/bg-image.png");
@@ -420,39 +430,6 @@
       }
       .top-designers__main-card-photos{
         display: none;
-      }
-    }
-    // banners
-    .banners{
-      .banners__main{
-        flex-direction: column;
-      }
-      .banners__main-fathers{
-        img{
-          border-radius: $radius-16;
-        }
-      }
-      .banners__main-fathers-title-h{
-        color: $gray10;
-        @include body-2;
-      }
-      .banners__main-fathers-title-btn{
-        border: none;
-        padding: unset;
-      }
-
-      .banners__main-mothers{
-        img{
-          border-radius: $radius-16;
-        }
-      }
-      .banners__main-mothers-title-h{
-        color: $gray10;
-        @include body-2;
-      }
-      .banners__main-mothers-title-btn{
-        border: none;
-        padding: unset;
       }
     }
   }
@@ -596,9 +573,8 @@
       &-line {
         @include line-styles;
       }
-
       &-link {
-        @include a-styles;
+        display: none;
       }
     }
 
@@ -657,10 +633,6 @@
         background-color: $tint-primary;
         left: 15px;
       }
-      // &--redshade{
-      //   background-color: $shade1;
-      // }
-
       &--yellow {
         background-color: $Wlight;
         left: 20px;
@@ -706,6 +678,51 @@
       justify-content: flex-end;
       gap: $space-8;
       @include heading-5;
+    }
+  }
+  @media (width < 768px) {
+    .interests{ 
+      &__title{
+        justify-content: space-between;
+        &-line{
+          display: none;
+        }
+        img{
+          display: none;
+        }
+        &-link{
+          display: block;
+          @include a-styles;
+        }
+      }
+      &__main{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: $space-32;
+      }
+      .interest-card{
+        position: relative;
+        max-width: 190px;
+
+        &__desktop{
+          display: none;
+        }
+        &__img {
+          img{
+            width: 100%;
+          }
+        }
+        &__colors{
+          top: 135px;
+          right: 84px;
+        }
+      }
+      &__name{
+        font-size: 16px;
+      } 
+      &__btnPrev{
+        display: none;
+      }
     }
   }
   .swiper {

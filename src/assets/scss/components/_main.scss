@@ -8,42 +8,24 @@
 @use '../../../../node_modules/swiper/swiper-bundle.css' as *;
 
 
-
+// home sectoins
+.home-sections{
+  display: flex;
+  flex-direction: column;
+  @media (width < 768px) {
+    .special-sale{
+      order: 2;
+    }
+    .popular-designs{
+      order: 1;
+    }
+  }
+}
 
 // hero scss
 .body_c{
     // margin-bottom: 500px;
 }
-
-// navbar scss
-// .navbar {
-//     &__list {
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
-//       width: 100%;
-//     }
-  
-//     &__button {
-//     }
-  
-//     &__menu {
-//       display: flex;
-//       gap: $space-76;
-//       color: $gray9;
-//       @include body-3;
-  
-//       li a {
-//         text-decoration: none;
-//         color: inherit;
-//         transition: 0.3s;
-  
-//         &:hover {
-//           color: $primary;
-//         }
-//       }
-//     }
-//   }
 
 // hero scss
 .hero {
@@ -367,6 +349,8 @@
 }
 @media (width < 768px){
   .special-sale{
+    display: flex;
+    order: 2;
     &__title{
       justify-content: space-between;
       &-line{
@@ -429,7 +413,6 @@
     }
   }
 }
-
 
 // banners scss
 .banners {
@@ -495,6 +478,40 @@
         }
     }
 }
+@media (width < 768px) {
+  .banners{
+    .banners__main{
+      flex-direction: column;
+    }
+    .banners__main-fathers{
+      img{
+        border-radius: $radius-16;
+      }
+    }
+    .banners__main-fathers-title-h{
+      color: $gray10;
+      @include body-2;
+    }
+    .banners__main-fathers-title-btn{
+      border: none;
+      padding: unset;
+    }
+
+    .banners__main-mothers{
+      img{
+        border-radius: $radius-16;
+      }
+    }
+    .banners__main-mothers-title-h{
+      color: $gray10;
+      @include body-2;
+    }
+    .banners__main-mothers-title-btn{
+      border: none;
+      padding: unset;
+    }
+  }
+}
 
 // InvitationCard scss
 .invitation-card {
@@ -538,6 +555,31 @@
       img {
         width: 20px;
         height: 20px;
+      }
+    }
+}
+  @media (width < 768px) {
+    .invitation-card{
+      &__col-mobile{
+        display: none;
+      }
+      &__content{
+        justify-content: center;
+      }
+      &__column{
+        width: 33%;
+        gap: $space-8;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      &__title{
+        @include caption-1;
+      }
+      &__btn{
+        align-self: auto;
       }
     }
   }
