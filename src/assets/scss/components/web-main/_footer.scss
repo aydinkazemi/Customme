@@ -6,6 +6,12 @@
 @use '../../atoms/general' as *;
 
 .footer{
+    &__up-mobile{
+        display: none;
+    }
+    &__bottom-mobile{
+        display: none;
+    }
     &__main{
         @include flex(space-between,center,row);
         padding: $space-56 0;
@@ -122,4 +128,60 @@
         padding-bottom: $space-24;
     }
 
+}
+
+@media (width < 768px) {
+    .footer{
+        &__up{
+            display: none;
+        }
+        &__bottom{
+            display: none;
+        }
+        &__up-mobile{
+            display: block;
+            background-color: $shade6;
+            color: $tint1;
+            padding: $px-16 0;
+            @include flex(center,center,column);
+            gap: $space-16;
+
+            .footer__contact{
+                @include flex(center,center,column);
+                gap: $space-16;
+                margin-bottom: 0;
+            }
+            .footer__icons{
+                img{
+                    cursor: pointer;
+                }
+            }
+            .footer__copyright{
+                @include caption-4;
+                padding-bottom: 0;
+            }
+        }
+        &__bottom-mobile{
+            display: block;
+            background-color: $tint-primary;
+            color: $tint1;
+            @include flex(center,center);
+
+
+            .footer__item{
+                display: flex;
+                gap: $space-48;
+                padding: $px-32 0;
+
+            }
+            .footer__list{
+                a{
+                    color: $tint1;
+                    @include flex(center,center,column-reverse);
+                    max-width: 110px;
+                    max-height: 32px;
+                }
+            }
+        }
+    }
 }

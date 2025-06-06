@@ -583,13 +583,14 @@
       gap: $space-40;
       margin: $space-24 0 $space-40 0;
     }
-    &__btnPrev{
-      img{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 0;
-      }
+    .swiper-button-prev {
+      position: absolute; 
+      top: 50%;
+      right: 96.5%;     
+      transform: translateY(-50%);
+      z-index: 9;
+      width: 40px;
+      height: 40px;
     }
   }
   .interest-card {
@@ -603,6 +604,7 @@
 
     &__img {
       position: relative;
+      @include flex(center,center);
       img{
         border-radius: $radius-8;
       }
