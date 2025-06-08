@@ -12,7 +12,7 @@
 .home-sections{
   display: flex;
   flex-direction: column;
-  @media (width < 768px) {
+  @media (width <= 768px) {
     .special-sale{
       order: 2;
     }
@@ -79,13 +79,12 @@
       left: 0;
     }
 } 
-@media (width < 768px){
+@media (width <= 768px){
   .hero{
     &__image--base{
       position: absolute;
       max-width: 368px;
-      top: -61px;
-      right: -95px;
+      margin: 0;
 
     }
     &__images {
@@ -151,7 +150,7 @@
       }
     }
 }
-@media (width < 768px){
+@media (width <= 768px){
   .categories{
     &__title{
       @include flex(flex-start,center);
@@ -347,7 +346,7 @@
       }
     }
 }
-@media (width < 768px){
+@media (width <= 768px){
   .special-sale{
     display: flex;
     order: 2;
@@ -478,7 +477,7 @@
         }
     }
 }
-@media (width < 768px) {
+@media (width <= 768px) {
   .banners{
     .banners__main{
       flex-direction: column;
@@ -558,7 +557,7 @@
       }
     }
 }
-  @media (width < 768px) {
+  @media (width <= 768px) {
     .invitation-card{
       &__col-mobile{
         display: none;

@@ -130,7 +130,7 @@
 
 }
 
-@media (width < 768px) {
+@media (width <= 768px) {
     .footer{
         &__up{
             display: none;

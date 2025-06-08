@@ -33,7 +33,7 @@
 body section,header{
   margin-top: $space-40;
 }
-@media (width < 768px){
+@media (width <= 768px){
   body section,header{
     margin-top: $space-16;
   }

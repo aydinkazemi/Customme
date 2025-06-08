@@ -112,7 +112,7 @@
       @include heading-5;
     }
   }
-  @media (width < 768px) {
+  @media (width <= 768px) {
     .products{
       &__title{
         justify-content: space-between;
@@ -204,7 +204,7 @@
       }
     }
   }
-  @media (width < 768px) {
+  @media (width <= 768px) {
     .popular-designs{
       order: 1;
         &__title{
@@ -393,7 +393,7 @@
         }
     }
   }
-  @media (width < 768px) {
+  @media (width <= 768px) {
     .top-designers{
       &__title{
         justify-content: space-between;
@@ -515,7 +515,7 @@
           }
     }
   }
-  @media (width < 768px) {
+  @media (width <= 768px) {
     .weeks-designs{
       &__title{
           justify-content: space-between;
@@ -682,7 +682,7 @@
       @include heading-5;
     }
   }
-  @media (width < 768px) {
+  @media (width <= 768px) {
     .interests{ 
       &__title{
         justify-content: space-between;
